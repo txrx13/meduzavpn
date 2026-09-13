@@ -47,15 +47,16 @@ you to a different machine.
 | **WireGuard** — fastest, easiest to recognise | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **OpenVPN** — works almost everywhere | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **VLESS** — REALITY, looks like ordinary TLS | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ |
+| **VLESS 2.0** — XHTTP + REALITY on 2053 | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ |
 | **Xray** | ✅ | ✅ | ✅ | ⚠️ | ⚠️ | ⚠️ |
 | **V2Ray** | ✅ | ✅ | ✅ | ⚠️ | ⚠️ | ⚠️ |
-| **Hysteria 2** — QUIC, best on a lossy link | ✅ | ✅ | ✅ | ⚠️ | ⚠️ | ⚠️ |
+| **Hysteria 2** — QUIC, best on a lossy link | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ |
 | **Shadowsocks** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **Outline VPN** | ✅ | ✅ | ✅ | ✅ | ✅ | — |
 | **SOCKS5 proxy** | ⚠️ | ✅ | ✅ | ⚠️ | ⚠️ | ⚠️ |
 | **IKEv2/IPsec** — built into the OS | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **OpenConnect** | ✅ | ✅ | ✅ | ⚠️ | — | ✅ |
-| **SoftEther** | ✅ | — | ⚠️ | — | — | ⚠️ |
+| **SoftEther** — a standard .ovpn, same engine as OpenVPN | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 ✅ supported · ⚠️ needs a third-party client, an older OS or compatible router firmware · — not supported
 
@@ -132,6 +133,16 @@ source code**.
 
 Everything below is also on **[meduzavpn.com](https://meduzavpn.com)**.
 
+### Applications
+
+| File | For |
+|---|---|
+| [`MeduzaVPN-1.2.24-160-macos.dmg`](https://github.com/txrx13/meduzavpn/releases/latest/download/MeduzaVPN-1.2.24-160-macos.dmg) | macOS — Apple silicon and Intel, notarized |
+| [`MeduzaVPN-1.2.24-160-android.apk`](https://github.com/txrx13/meduzavpn/releases/latest/download/MeduzaVPN-1.2.24-160-android.apk) | Android — release-signed |
+| [`MeduzaVPN-Setup-1.2.23-windows.exe`](https://github.com/txrx13/meduzavpn/releases/latest/download/MeduzaVPN-Setup-1.2.23-windows.exe) | Windows — installer |
+
+iOS is on the App Store — see [meduzavpn.com](https://meduzavpn.com).
+
 ### Linux — the app (GUI)
 
 | File | For |
@@ -158,7 +169,7 @@ Everything below is also on **[meduzavpn.com](https://meduzavpn.com)**.
 > Taking a `.deb` or `.rpm` by hand? **The app package depends on the service package** —
 > install both, or use the repository above and let it sort itself out.
 
-The full desktop and mobile applications for macOS, Windows, iOS and Android are on
+The iOS app is on the App Store; every other build is right here and on
 [meduzavpn.com](https://meduzavpn.com).
 
 ---
