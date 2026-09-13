@@ -1,0 +1,3 @@
+# This repository publishes builds, not source. Nothing here is code, so the
+# language statistics GitHub would otherwise infer are noise.
+*.svg linguist-documentation

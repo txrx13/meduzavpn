@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-label="MeduzaVPN — personal VPN on your own server">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A0E19"/>
+      <stop offset="55%" stop-color="#141B2E"/>
+      <stop offset="100%" stop-color="#0A0E19"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8199D6"/>
+      <stop offset="100%" stop-color="#C37BD9"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C37BD9" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#C37BD9" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="320" fill="url(#bg)"/>
+  <circle cx="196" cy="160" r="150" fill="url(#glow)"/>
+
+  <!-- The jellyfish, drawn rather than raster: it stays crisp on any display
+       and keeps the repository free of binary assets. -->
+  <g transform="translate(196,150)" opacity="0.95">
+    <path d="M-62 6 a62 56 0 0 1 124 0 q-62 22 -124 0 z" fill="url(#accent)" opacity="0.9"/>
+    <path d="M-62 6 a62 56 0 0 1 124 0" fill="none" stroke="#E7D8F5" stroke-opacity="0.5" stroke-width="2"/>
+    <g stroke="url(#accent)" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.85">
+      <path d="M-44 12 q-8 34 4 62 q10 24 -2 46"/>
+      <path d="M-22 16 q-5 38 3 66 q7 22 -3 40"/>
+      <path d="M0 18 q0 40 0 68 q0 22 0 40"/>
+      <path d="M22 16 q5 38 -3 66 q-7 22 3 40"/>
+      <path d="M44 12 q8 34 -4 62 q-10 24 2 46"/>
+    </g>
+  </g>
+
+  <text x="420" y="132" font-family="Verdana,DejaVu Sans,sans-serif" font-size="58" font-weight="700" fill="#FFFFFF">MeduzaVPN</text>
+  <text x="422" y="182" font-family="Verdana,DejaVu Sans,sans-serif" font-size="25" fill="#8199D6">Personal VPN on your own server</text>
+  <rect x="422" y="206" width="150" height="4" rx="2" fill="url(#accent)"/>
+  <text x="422" y="252" font-family="Verdana,DejaVu Sans,sans-serif" font-size="19" fill="#B3C1DA">Linux  ·  macOS  ·  Windows  ·  iOS  ·  Android</text>
+</svg>
