@@ -25,7 +25,7 @@
 
 ## What is new
 
-The **1.2.24 (170)** release is being rolled out across the testing and direct-download channels. Each artifact is published after its platform checks; the download links can point to an earlier build until that platform is ready.
+**Build 170 is available** in iOS TestFlight, Android internal testing/APK, Linux GUI/CLI direct downloads, and Windows CLI. macOS distribution, the Windows graphical installer, and the apt/dnf repository update are still pending. The repositories currently serve build 158; use the direct Linux packages for 170. See the [170 release notes](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-170) for the exact files and validation.
 
 - **MeduzaVPN ULTRA:** updated iOS flow admission and DNS handling under load, bounded memory accounting, preservation of active one-way UDP sessions, and non-blocking ICMP connection setup.
 - **Network recovery:** iOS and Android reconnect ULTRA when the active physical network changes or returns after going offline.
