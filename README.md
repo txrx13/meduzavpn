@@ -5,60 +5,45 @@
 <p align="center">
   <a href="https://meduzavpn.com"><img alt="meduzavpn.com" src="https://img.shields.io/badge/meduzavpn.com-C37BD9?style=for-the-badge&labelColor=0A0E19"></a>
   <a href="https://github.com/txrx13/meduzavpn/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/txrx13/meduzavpn?style=for-the-badge&label=release&labelColor=0A0E19&color=8199D6"></a>
-  <a href="#downloads"><img alt="Downloads" src="https://img.shields.io/badge/downloads-7%20files-5A7AB7?style=for-the-badge&labelColor=0A0E19"></a>
+  <a href="#downloads"><img alt="Downloads" src="https://img.shields.io/badge/downloads-apps%20%26%20CLI-5A7AB7?style=for-the-badge&labelColor=0A0E19"></a>
   <img alt="No source" src="https://img.shields.io/badge/builds%20only-no%20source-8199D6?style=for-the-badge&labelColor=0A0E19">
 </p>
 
-<h3 align="center">Your VPN. Your server. Your rules.</h3>
+<h3 align="center">One account. Your devices. A choice of VPN protocols.</h3>
 
 <p align="center">
-  A VPN server that is <b>yours alone</b> — not a shared pool, not a crowded exit node.<br>
-  You pick the country, we deploy the server, and nobody else is on it.
+  Official MeduzaVPN applications and command-line tools.<br>
+  Choose a VPN location and protocol, manage your services, and connect from your devices.
 </p>
 
 <p align="center">
-  <b>This repository publishes the official builds and nothing else.</b><br>
-  <sub>No source code is here, by design.</sub>
+  <b>This repository distributes compiled releases and documentation.</b><br>
+  <sub>The application source code is maintained separately and is not published here.</sub>
 </p>
 
 ---
 
-## Why a server of your own
+## What is new
 
-A shared VPN puts thousands of people behind one address. That address collects rate limits,
-CAPTCHAs and outright blocks because of what strangers did with it. A server of your own
-carries only your reputation.
+The **1.2.24 (170)** release is being rolled out across the testing and direct-download channels. Each artifact is published after its platform checks; the download links can point to an earlier build until that platform is ready.
 
-It also changes what a block can do to you. When one protocol stops working on your network,
-you switch to another **on the same server**, in one tap — the server already speaks all of
-them.
+- **MeduzaVPN ULTRA:** updated iOS flow admission and DNS handling under load, bounded memory accounting, preservation of active one-way UDP sessions, and non-blocking ICMP connection setup.
+- **Network recovery:** iOS and Android reconnect ULTRA when the active physical network changes or returns after going offline.
+- **Protocol selection:** ULTRA appears above the alphabetical list; VLESS and VLESS 2.0 are in the general list. Display order does not change an existing protocol selection.
+- **Connection settings:** IPv4/IPv6 controls where supported, configuration-file and QR sharing, and a visible countdown until an IP address can be changed again.
+- **Desktop and command line:** graphical applications, Linux service packages, and CLI downloads for Linux, macOS and Windows.
 
----
+Availability depends on the platform, installed build, server configuration and account access. Test builds and public store releases can have different version numbers; check the release notes for the exact artifacts and channels.
+
+### ULTRA validation
+
+The iOS changes were checked with repeated downloads, DNS requests under flow pressure, TCP/UDP tests and platform lifecycle tests. A controlled 200 Mbps fixture completed ten rounds at approximately 188–189 Mbps without HTTPS errors. This is a laboratory result, not a guarantee of a particular speed on a phone or mobile network. The reported iPhone slowdown still needs device verification. Release notes retain known test limitations.
 
 ## Protocols
 
-Every one of these runs on your server at the same time. Switching between them does not move
-you to a different machine.
+MeduzaVPN clients offer protocols supported by the selected platform and service, including **MeduzaVPN**, **MeduzaVPN ULTRA**, **WireGuard**, **OpenVPN**, **VLESS**, **VLESS 2.0 (XHTTP + REALITY)**, **Hysteria 2**, **Xray/V2Ray**, **Shadowsocks**, **Outline**, **SOCKS5**, and **SoftEther**. System IKEv2/IPsec support depends on the operating system.
 
-| Protocol | Windows | macOS | Linux | Android | iOS | Router |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|
-| **MeduzaVPN** — our own, obfuscated | ✅ | ✅ | ✅ | ✅ | ✅ | — |
-| **MeduzaVPN ULTRA** — multi-carrier transport | — | ✅ | — | ✅ | ✅ | — |
-| **WireGuard** — fastest, easiest to recognise | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| **OpenVPN** — works almost everywhere | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| **VLESS** — REALITY, looks like ordinary TLS | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ |
-| **VLESS 2.0** — XHTTP + REALITY on 2053 | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ |
-| **Xray** | ✅ | ✅ | ✅ | ⚠️ | ⚠️ | ⚠️ |
-| **V2Ray** | ✅ | ✅ | ✅ | ⚠️ | ⚠️ | ⚠️ |
-| **Hysteria 2** — QUIC, best on a lossy link | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ |
-| **Shadowsocks** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| **Outline VPN** | ✅ | ✅ | ✅ | ✅ | ✅ | — |
-| **SOCKS5 proxy** | ⚠️ | ✅ | ✅ | ⚠️ | ⚠️ | ⚠️ |
-| **IKEv2/IPsec** — built into the OS | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| **OpenConnect** | ✅ | ✅ | ✅ | ⚠️ | — | ✅ |
-| **SoftEther** — a standard .ovpn, same engine as OpenVPN | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-
-✅ supported · ⚠️ needs a third-party client, an older OS or compatible router firmware · — not supported
+ULTRA's graphical client integration is available on **iOS, Android and macOS** when enabled in the release. Windows and Linux GUI builds do not gain ULTRA merely by sharing the application version. The Linux CLI/service has a separate ULTRA implementation and requires the corresponding release configuration and device enrollment. A CLI on macOS or Windows controls the installed application rather than supplying a separate VPN engine.
 
 ---
 
@@ -112,9 +97,10 @@ sudo dnf install meduzavpn           # command line and service only
 <summary><b>Anything else</b> — Arch, openSUSE, NixOS, Alpine, a container</summary>
 
 ```bash
-curl -fsSLO https://github.com/txrx13/meduzavpn/releases/latest/download/meduzavpn-1.2.24-158-linux-amd64.tar.gz
-tar xzf meduzavpn-1.2.24-158-linux-amd64.tar.gz
-cd meduzavpn-1.2.24-158-linux-amd64
+curl -fsSLO https://meduzavpn-builds.fra1.digitaloceanspaces.com/latest/meduzavpn-linux-amd64.tar.gz
+mkdir meduzavpn-install
+tar xzf meduzavpn-linux-amd64.tar.gz -C meduzavpn-install --strip-components=1
+cd meduzavpn-install
 sudo ./install.sh        # and ./uninstall.sh when you want it gone
 ```
 
@@ -133,44 +119,31 @@ source code**.
 
 Everything below is also on **[meduzavpn.com](https://meduzavpn.com)**.
 
-### Applications
+### Applications and testing
 
-| File | For |
+| Platform / channel | Download |
 |---|---|
-| [`MeduzaVPN-1.2.24-160-macos.dmg`](https://github.com/txrx13/meduzavpn/releases/latest/download/MeduzaVPN-1.2.24-160-macos.dmg) | macOS — Apple silicon and Intel, notarized |
-| [`MeduzaVPN-1.2.24-160-android.apk`](https://github.com/txrx13/meduzavpn/releases/latest/download/MeduzaVPN-1.2.24-160-android.apk) | Android — release-signed |
-| [`MeduzaVPN-Setup-1.2.23-windows.exe`](https://github.com/txrx13/meduzavpn/releases/latest/download/MeduzaVPN-Setup-1.2.23-windows.exe) | Windows — installer |
+| iOS public store | [App Store](https://apps.apple.com/us/app/meduzavpn/id6755959724) |
+| iOS and macOS beta | TestFlight; access is managed through the existing tester groups |
+| Android public store | [Google Play](https://play.google.com/store/apps/details?id=app.meduzavpn) |
+| Android beta | [Google Play testing](https://play.google.com/apps/testing/app.meduzavpn) — sign in with an invited tester account |
+| macOS direct installer | [Signed, notarized DMG](https://meduzavpn.com/download/macos) |
+| Android direct installer | [Release-signed APK](https://meduzavpn.com/download/android) |
+| Windows graphical app | [Windows installer](https://meduzavpn.com/download/windows) |
+| Linux graphical app | [DEB](https://meduzavpn.com/download/linux-desktop-deb) · [RPM](https://meduzavpn.com/download/linux-desktop-rpm) |
 
-iOS is on the App Store — see [meduzavpn.com](https://meduzavpn.com).
+### Command line and Linux service
 
-### Linux — the app (GUI)
-
-| File | For |
+| Platform | Download |
 |---|---|
-| [`meduzavpn-desktop_1.2.24-158_amd64.deb`](https://github.com/txrx13/meduzavpn/releases/latest/download/meduzavpn-desktop_1.2.24-158_amd64.deb) | Ubuntu, Debian |
-| [`meduzavpn-desktop-1.2.24-158.x86_64.rpm`](https://github.com/txrx13/meduzavpn/releases/latest/download/meduzavpn-desktop-1.2.24-158.x86_64.rpm) | Fedora, CentOS, RHEL |
+| Linux CLI + daemon | [DEB](https://meduzavpn.com/download/linux-deb) · [RPM](https://meduzavpn.com/download/linux-rpm) · [tar.gz](https://meduzavpn.com/download/linux-tar) |
+| macOS CLI | [Universal archive](https://meduzavpn.com/download/cli-macos) |
+| Windows CLI | [Windows archive](https://meduzavpn.com/download/cli-windows) |
 
-### Linux — command line and service (CLI)
-
-| File | For |
-|---|---|
-| [`meduzavpn_1.2.24-158_amd64.deb`](https://github.com/txrx13/meduzavpn/releases/latest/download/meduzavpn_1.2.24-158_amd64.deb) | Ubuntu, Debian |
-| [`meduzavpn-1.2.24-158.x86_64.rpm`](https://github.com/txrx13/meduzavpn/releases/latest/download/meduzavpn-1.2.24-158.x86_64.rpm) | Fedora, CentOS, RHEL |
-| [`meduzavpn-1.2.24-158-linux-amd64.tar.gz`](https://github.com/txrx13/meduzavpn/releases/latest/download/meduzavpn-1.2.24-158-linux-amd64.tar.gz) | everything else |
-
-### Command line for macOS and Windows
-
-| File | For |
-|---|---|
-| [`meduzavpn-1.2.24-macos-universal.tar.gz`](https://github.com/txrx13/meduzavpn/releases/latest/download/meduzavpn-1.2.24-macos-universal.tar.gz) | Apple silicon and Intel — signed and **notarized by Apple** |
-| [`meduzavpn-1.2.24-windows.zip`](https://github.com/txrx13/meduzavpn/releases/latest/download/meduzavpn-1.2.24-windows.zip) | x64 and ARM64 |
+Versioned files and their SHA-256 checksums are listed in [GitHub Releases](https://github.com/txrx13/meduzavpn/releases). The website links above remain stable between releases. See each release's asset list for the architectures actually provided.
 
 > [!IMPORTANT]
-> Taking a `.deb` or `.rpm` by hand? **The app package depends on the service package** —
-> install both, or use the repository above and let it sort itself out.
-
-The iOS app is on the App Store; every other build is right here and on
-[meduzavpn.com](https://meduzavpn.com).
+> Installing Linux files manually? The graphical `meduzavpn-desktop` package depends on the `meduzavpn` service package. Install both, or use the signed repository above to resolve dependencies.
 
 ---
 
