@@ -25,14 +25,14 @@
 
 ## What is new
 
-**Build 171 updates Settings** and is available in Android internal testing/APK and Linux GUI direct downloads. iOS171 has been uploaded and its TestFlight distribution is being finalized. See the [171 release notes](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-171).
+**Build 171 updates Settings** and is available in iOS TestFlight, Android internal testing/APK and Linux GUI direct downloads. See the [171 release notes](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-171).
 
-The Linux and Windows CLI downloads remain at170; their code is unchanged by this UI update. macOS distribution and the Windows graphical installer are still pending. The apt/dnf repositories currently serve158 while their update is pending; use the direct Linux packages for GUI171 and CLI170. The [170 release](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-170) retains the CLI files and ULTRA validation.
+The Linux and Windows CLI downloads remain at 170; their code is unchanged by this UI update. macOS distribution and the Windows graphical installer are still pending. The apt/dnf repositories currently serve 158 while their update is pending; use the direct Linux packages for GUI 171 and CLI 170. The [170 release](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-170) retains the CLI files and ULTRA validation.
 
 - **MeduzaVPN ULTRA:** updated iOS flow admission and DNS handling under load, bounded memory accounting, preservation of active one-way UDP sessions, and non-blocking ICMP connection setup.
 - **Network recovery:** iOS and Android reconnect ULTRA when the active physical network changes or returns after going offline.
-- **Protocol selection:** ULTRA appears above the general list. In build171, MeduzaVPN sits immediately before Hysteria2; VLESS and VLESS2.0 stay in the alphabetical group. Display order does not change an existing protocol selection.
-- **Settings:** the ULTRA diagnostics menu entry is hidden for everyone in build171. Devices now refreshes the account session before loading; the Devices server update is still pending.
+- **Protocol selection:** ULTRA appears above the general list. In build 171, MeduzaVPN sits immediately before Hysteria 2; VLESS and VLESS 2.0 stay in the alphabetical group. Display order does not change an existing protocol selection.
+- **Settings:** the ULTRA diagnostics menu entry is hidden for everyone in build 171. Devices now refreshes the account session before loading; the Devices server update is still pending.
 - **Connection settings:** IPv4/IPv6 controls where supported, configuration-file and QR sharing, and a visible countdown until an IP address can be changed again.
 - **Desktop and command line:** graphical applications, Linux service packages, and CLI downloads for Linux, macOS and Windows.
 
