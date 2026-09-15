@@ -32,7 +32,7 @@ The Linux and Windows CLI downloads remain at 170; their code is unchanged by th
 - **MeduzaVPN ULTRA:** updated iOS flow admission and DNS handling under load, bounded memory accounting, preservation of active one-way UDP sessions, and non-blocking ICMP connection setup.
 - **Network recovery:** iOS and Android reconnect ULTRA when the active physical network changes or returns after going offline.
 - **Protocol selection:** ULTRA appears above the general list. In build 171, MeduzaVPN sits immediately before Hysteria 2; VLESS and VLESS 2.0 stay in the alphabetical group. Display order does not change an existing protocol selection.
-- **Settings:** the ULTRA diagnostics menu entry is hidden for everyone in build 171. Devices now refreshes the account session before loading; the Devices server update is still pending.
+- **Settings:** the ULTRA diagnostics menu entry is hidden for everyone in build 171. Devices refreshes the account session before loading. The Devices server update is live: the missing endpoint is restored, with stable session identity across token refreshes and device session management.
 - **Connection settings:** IPv4/IPv6 controls where supported, configuration-file and QR sharing, and a visible countdown until an IP address can be changed again.
 - **Desktop and command line:** graphical applications, Linux service packages, and CLI downloads for Linux, macOS and Windows.
 
