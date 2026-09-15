@@ -25,22 +25,75 @@
 
 ## What is new
 
-**Build 171 updates Settings** and is available in iOS TestFlight, Android internal testing/APK and Linux GUI direct downloads. See the [171 release notes](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-171).
+**[1.2.24 (173)](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-173)** adds editable Custom presets and smoother updates to location-based Split tunneling. iOS and macOS TestFlight, Google Play, Android APK, macOS DMG and Linux GUI downloads are on 173.
 
-The Linux and Windows CLI downloads remain at 170; their code is unchanged by this UI update. macOS distribution and the Windows graphical installer are still pending. The apt/dnf repositories currently serve 158 while their update is pending; use the direct Linux packages for GUI 171 and CLI 170. The [170 release](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-170) retains the CLI files and ULTRA validation.
+| Release | Highlights |
+|---|---|
+| **[173 — Edit presets and keep your location](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-173)** | Edit preset names, networks and domains without rebuilding routes. Saving routing settings reconnects an affected active VPN and preserves the selected location. Updated macOS TestFlight packaging and shared data access for VPN extensions. |
+| **[172 — Location Split tunneling](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-172)** | One entry VPN, country and region presets, custom networks and domains, VPN/Direct destinations and an OTHERS fallback. ULTRA tunnels between your servers. Improved Devices spacing and Linux GUI runtime dependencies. Includes the current CLI packages. |
 
-- **MeduzaVPN ULTRA:** updated iOS flow admission and DNS handling under load, bounded memory accounting, preservation of active one-way UDP sessions, and non-blocking ICMP connection setup.
-- **Network recovery:** iOS and Android reconnect ULTRA when the active physical network changes or returns after going offline.
-- **Protocol selection:** ULTRA appears above the general list. In build 171, MeduzaVPN sits immediately before Hysteria 2; VLESS and VLESS 2.0 stay in the alphabetical group. Display order does not change an existing protocol selection.
-- **Settings:** the ULTRA diagnostics menu entry is hidden for everyone in build 171. Devices refreshes the account session before loading. The Devices server update is live: the missing endpoint is restored, with stable session identity across token refreshes and device session management.
-- **Connection settings:** IPv4/IPv6 controls where supported, configuration-file and QR sharing, and a visible countdown until an IP address can be changed again.
-- **Desktop and command line:** graphical applications, Linux service packages, and CLI downloads for Linux, macOS and Windows.
+**Release channels, checked 15 September 2026:** App Store build 173 has been submitted for review and is set to release automatically after Apple's approval. CLI packages remain at 172 because these latest changes affect the graphical apps. The Windows graphical app remains at 1.2.23. Signed apt/dnf repositories currently serve 158; use the direct downloads for Linux GUI 173 and CLI 172.
 
-Availability depends on the platform, installed build, server configuration and account access. Test builds and public store releases can have different version numbers; check the release notes for the exact artifacts and channels.
+## Split tunneling, per location
+
+Connect to one entry location and choose where different traffic goes. Split tunneling is configured in **each location's settings**, rather than in the global Settings menu. One location is selected as the entry VPN; its badge identifies it in the VPN list.
+
+- **Country and territory presets:** IPv4/IPv6 network-prefix lists, including Russia, the United States, China and individual European countries.
+- **Region presets:** Europe, Americas, Asia, Africa and Oceania combine country presets.
+- **Custom presets:** create a named collection of CIDR networks and/or domains. In 173, edit its name and contents while keeping its existing route assignments. Saved presets without a route can also be edited from the Custom presets list.
+- **Choose a destination:** send each preset through one of the VPN servers on your account, or select **Direct** to bypass the VPN.
+- **OTHERS:** choose a destination for everything that did not match an earlier rule.
+- **Ordered rules:** rules are evaluated from top to bottom; the first match wins. Put specific rules before broader regions. Europe includes Russia, so a separate RU rule belongs above Europe.
+
+### Example policy
+
+| Traffic preset | Destination |
+|---|---|
+| RU | Your Russia VPN |
+| Europe | Your Frankfurt VPN |
+| US | Your US VPN |
+| OTHERS | Another selected VPN, or one of the same exit servers |
+
+With Novosibirsk selected as the entry, this traffic enters through Novosibirsk, where routing sends it to the selected exit. If you configure Direct rules instead, their matching traffic bypasses the VPN on the client. The entry VPS establishes **ULTRA-only tunnels** to the configured exit servers.
+
+```mermaid
+flowchart LR
+    device[Your device] -. Optional Direct rules .-> direct[Internet via your provider]
+    device -->|VPN traffic| entry[Entry VPN]
+    entry -->|ULTRA: RU| ru[Your Russia VPN]
+    entry -->|ULTRA: Europe| eu[Your Frankfurt VPN]
+    entry -->|ULTRA: US| us[Your US VPN]
+    entry -->|ULTRA: OTHERS| other[Your chosen exit VPN]
+```
+
+### Set it up
+
+1. Open a location's settings and turn on **Split tunneling**.
+2. Select the entry VPN, add country/region presets or create a Custom preset, and assign a destination to each rule.
+3. Arrange the rules and choose the **OTHERS** destination, then save.
+4. Connect to the entry location. In 173, updating routing for an affected active connection automatically reconnects it using fresh settings and keeps the selected location. A failed reconnect shows an error; an already disconnected VPN stays disconnected.
+5. To disable the feature, select **Off · no entry VPN**.
+
+Large Apple-client policies containing Direct rules can exceed the OS VPN configuration size limit. Keep such policies small; the country-to-VPN example above keeps prefix routing on the entry VPS.
+
+Country presets describe network registrations, which can differ from a website's physical location. Connecting to a Split tunneling entry uses ULTRA; graphical ULTRA connections are supported on **iOS, Android and macOS**. See [Protocols](#protocols) for Linux and Windows availability.
+
+## More in the app
+
+| Feature | What you can do |
+|---|---|
+| **Devices** | See where your account is signed in, identify the current device, inspect IP and activity details, and sign out another device or all other devices. |
+| **Connect On Demand** | Keep the VPN connected and reconnect automatically where supported. On Android, system-level blocking of connections without VPN is configured in Android's VPN settings. |
+| **Ask Mia** | Use the in-app Meduza assistant for help. |
+| **Location settings** | Manage supported IPv4/IPv6 options, share connection configurations as files or QR codes, and see when an IP address can next be changed. |
+| **QR sign-in and desktop CLI** | Sign in to the command line with a QR code, list your VPNs, connect, check status and disconnect. On macOS/Windows the CLI controls the installed app. |
+| **ULTRA network recovery** | iOS and Android recover ULTRA when the physical network changes or returns after going offline. |
+
+Feature availability depends on the platform, installed build, service configuration and account access.
 
 ### ULTRA validation
 
-The iOS changes were checked with repeated downloads, DNS requests under flow pressure, TCP/UDP tests and platform lifecycle tests. A controlled 200 Mbps fixture completed ten rounds at approximately 188–189 Mbps without HTTPS errors. This is a laboratory result, not a guarantee of a particular speed on a phone or mobile network. The reported iPhone slowdown still needs device verification. Release notes retain known test limitations.
+Earlier ULTRA releases were checked with repeated downloads, DNS requests under flow pressure, TCP/UDP tests and platform lifecycle tests. A controlled 200 Mbps fixture completed ten rounds at approximately 188–189 Mbps without HTTPS errors. This is a laboratory result, not a guarantee of a particular speed on a phone or mobile network. See the [170 release notes](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-170) for that validation's scope and limitations.
 
 ## Protocols
 
@@ -52,12 +105,11 @@ ULTRA's graphical client integration is available on **iOS, Android and macOS** 
 
 ## Install on Linux
 
-### From our repository — recommended
+### Signed package repositories
 
-The repository resolves dependencies for you (the app pulls in the service by itself) and
-upgrades with the rest of your system. Everything in it is signed with our key, and the key is
-installed **before** the repository is added — a repository trusted first and verified later is
-not verified at all.
+**Repository snapshot checked 15 September 2026: 1.2.24-158 for the x86-64 GUI and service.** For the current Linux GUI **173** and CLI/service **172**, use the [direct packages](#downloads) and install both the GUI and service packages when installing the app.
+
+The apt/dnf repositories resolve dependencies and integrate with system updates. Their packages and metadata are signed. Install the signing key before adding a repository.
 
 <details open>
 <summary><b>Debian · Ubuntu</b></summary>
@@ -124,24 +176,24 @@ Everything below is also on **[meduzavpn.com](https://meduzavpn.com)**.
 
 ### Applications and testing
 
-| Platform / channel | Download |
-|---|---|
-| iOS public store | [App Store](https://apps.apple.com/us/app/meduzavpn/id6755959724) |
-| iOS and macOS beta | TestFlight; access is managed through the existing tester groups |
-| Android public store | [Google Play](https://play.google.com/store/apps/details?id=app.meduzavpn) |
-| Android beta | [Google Play testing](https://play.google.com/apps/testing/app.meduzavpn) — sign in with an invited tester account |
-| macOS direct installer | [Signed, notarized DMG](https://meduzavpn.com/download/macos) |
-| Android direct installer | [Release-signed APK](https://meduzavpn.com/download/android) |
-| Windows graphical app | [Windows installer](https://meduzavpn.com/download/windows) |
-| Linux graphical app | [DEB](https://meduzavpn.com/download/linux-desktop-deb) · [RPM](https://meduzavpn.com/download/linux-desktop-rpm) |
+| Platform / channel | Current release | Download |
+|---|---|---|
+| iOS public store | 1.2.24 (173) submitted for Apple review | [App Store](https://apps.apple.com/us/app/meduzavpn/id6755959724) |
+| iOS and macOS beta | 1.2.24 (173) | TestFlight; access is managed through the existing tester groups |
+| Android public store | 1.2.24 (173), production | [Google Play](https://play.google.com/store/apps/details?id=app.meduzavpn) |
+| Android beta | 1.2.24 (173), internal testing | [Google Play testing](https://play.google.com/apps/testing/app.meduzavpn) — sign in with an invited tester account |
+| macOS direct installer | 1.2.24 (173) | [Signed, notarized DMG](https://meduzavpn.com/download/macos) |
+| Android direct installer | 1.2.24 (173) | [Release-signed APK](https://meduzavpn.com/download/android) |
+| Windows graphical app | 1.2.23 | [Windows installer](https://meduzavpn.com/download/windows) |
+| Linux graphical app | 1.2.24-173, x86-64 | [DEB](https://meduzavpn.com/download/linux-desktop-deb) · [RPM](https://meduzavpn.com/download/linux-desktop-rpm) |
 
 ### Command line and Linux service
 
-| Platform | Download |
-|---|---|
-| Linux CLI + daemon | [DEB](https://meduzavpn.com/download/linux-deb) · [RPM](https://meduzavpn.com/download/linux-rpm) · [tar.gz](https://meduzavpn.com/download/linux-tar) |
-| macOS CLI | [Universal archive](https://meduzavpn.com/download/cli-macos) |
-| Windows CLI | [Windows archive](https://meduzavpn.com/download/cli-windows) |
+| Platform | Current release | Download |
+|---|---|---|
+| Linux CLI + daemon | 1.2.24-172 | [DEB](https://meduzavpn.com/download/linux-deb) · [RPM](https://meduzavpn.com/download/linux-rpm) · [tar.gz](https://meduzavpn.com/download/linux-tar) |
+| macOS CLI | 1.2.24-172 | [Universal archive](https://meduzavpn.com/download/cli-macos) |
+| Windows CLI | 1.2.24-172 | [Windows archive](https://meduzavpn.com/download/cli-windows) |
 
 Versioned files and their SHA-256 checksums are listed in [GitHub Releases](https://github.com/txrx13/meduzavpn/releases). The website links above remain stable between releases. See each release's asset list for the architectures actually provided.
 
@@ -175,10 +227,10 @@ interface on in the app's settings first.
 
 ## Verifying what you downloaded
 
-Every release ships `SHA256SUMS`:
+Each release has its own `SHA256SUMS` and detached signature. Release 173 covers its four graphical installers; the unchanged CLI files and their checksums are in [release 172](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-172). Download the checksum file from the same release as your installer:
 
 ```bash
-curl -fsSLO https://github.com/txrx13/meduzavpn/releases/latest/download/SHA256SUMS
+curl -fsSLO https://github.com/txrx13/meduzavpn/releases/download/v1.2.24-173/SHA256SUMS
 sha256sum -c SHA256SUMS --ignore-missing
 ```
 
