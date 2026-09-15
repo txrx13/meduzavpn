@@ -33,7 +33,7 @@
 | **[173 — Edit presets and keep your location](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-173)** | Edit preset names, networks and domains without rebuilding routes. Saving routing settings reconnects an affected active VPN and preserves the selected location. Updated macOS TestFlight packaging and shared data access for VPN extensions. |
 | **[172 — Location Split tunneling](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-172)** | One entry VPN, country and region presets, custom networks and domains, VPN/Direct destinations and an OTHERS fallback. ULTRA tunnels between your servers. Improved Devices spacing and Linux GUI runtime dependencies. |
 
-**Release channels:** direct app and CLI downloads are build 175, except the Windows graphical app, which remains at 1.2.23. TestFlight and public App Store releases follow separate review processes. Signed apt/dnf repositories currently serve 158; use the direct packages for build 175.
+**Release channels:** direct app and CLI downloads are build 175, except the Windows graphical app, which remains at 1.2.23. TestFlight and public App Store releases follow separate review processes. Signed apt/dnf repositories and direct Linux packages serve build 175.
 
 ## Split tunneling, per location
 
@@ -111,7 +111,7 @@ ULTRA's graphical client integration is available on **iOS, Android and macOS** 
 
 ### Signed package repositories
 
-**Repository snapshot checked 15 September 2026: 1.2.24-158 for the x86-64 GUI and service.** For the current Linux GUI and CLI/service **175**, use the [direct packages](#downloads) and install both the GUI and service packages when installing the app.
+**Repository snapshot checked 15 September 2026: 1.2.24-175.** The GUI is available for x86-64; the CLI and service are available for x86-64 and ARM64. Both apt/dnf repositories and [direct packages](#downloads) are current.
 
 The apt/dnf repositories resolve dependencies and integrate with system updates. Their packages and metadata are signed. Install the signing key before adding a repository.
 
@@ -178,13 +178,16 @@ source code**.
 
 Everything below is also on **[meduzavpn.com](https://meduzavpn.com)**.
 
+**Store status, checked 15 September 2026:** iOS, macOS and Android build 175 have been submitted with updated screenshots. Apple review and Google review are pending; automatic release after approval is enabled for all three. Direct downloads are already available.
+
 ### Applications and testing
 
 | Platform / channel | Current release | Download |
 |---|---|---|
 | iOS public store | 1.2.24 (175) submitted for Apple review | [App Store](https://apps.apple.com/us/app/meduzavpn/id6755959724) |
+| macOS public store | 1.2.24 (175) submitted for Apple review | [Mac App Store](https://apps.apple.com/app/meduzavpn/id6755959724) |
 | iOS and macOS beta | 1.2.24 (175) | TestFlight; access is managed through the existing tester groups |
-| Android public store | 1.2.24 (175), production | [Google Play](https://play.google.com/store/apps/details?id=app.meduzavpn) |
+| Android public store | 1.2.24 (175), full production rollout submitted for Google review | [Google Play](https://play.google.com/store/apps/details?id=app.meduzavpn) |
 | Android beta | 1.2.24 (175), internal testing | [Google Play testing](https://play.google.com/apps/testing/app.meduzavpn) — sign in with an invited tester account |
 | macOS direct installer | 1.2.24 (175) | [Signed, notarized DMG](https://meduzavpn.com/download/macos) |
 | Android direct installer | 1.2.24 (175) | [Release-signed APK](https://meduzavpn.com/download/android) |
