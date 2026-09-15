@@ -180,29 +180,30 @@ source code**.
 
 Everything below is also on **[meduzavpn.com](https://meduzavpn.com)**.
 
-**Store status, checked 15 September 2026:** iOS, macOS and Android build 175 have been submitted with updated screenshots. Apple review and Google review are pending; automatic release after approval is enabled for all three. Direct downloads are already available.
+**Release status, checked 15 September 2026:** direct downloads and signed Linux repositories serve 178. iOS TestFlight 178 is available to existing internal testers. Google Play 178 is in review for a full rollout, with automatic publication after approval. Public Apple store releases are separate from TestFlight.
 
 ### Applications and testing
 
 | Platform / channel | Current release | Download |
 |---|---|---|
-| iOS public store | 1.2.24 (175) submitted for Apple review | [App Store](https://apps.apple.com/us/app/meduzavpn/id6755959724) |
-| macOS public store | 1.2.24 (175) submitted for Apple review | [Mac App Store](https://apps.apple.com/app/meduzavpn/id6755959724) |
-| iOS and macOS beta | 1.2.24 (175) | TestFlight; access is managed through the existing tester groups |
-| Android public store | 1.2.24 (175), full production rollout submitted for Google review | [Google Play](https://play.google.com/store/apps/details?id=app.meduzavpn) |
-| Android beta | 1.2.24 (175), internal testing | [Google Play testing](https://play.google.com/apps/testing/app.meduzavpn) — sign in with an invited tester account |
-| macOS direct installer | 1.2.24 (175) | [Signed, notarized DMG](https://meduzavpn.com/download/macos) |
-| Android direct installer | 1.2.24 (175) | [Release-signed APK](https://meduzavpn.com/download/android) |
+| iOS public store | See current Apple listing; 178 is in TestFlight | [App Store](https://apps.apple.com/us/app/meduzavpn/id6755959724) |
+| macOS public store | See current Apple listing; separate from the 178 DMG | [Mac App Store](https://apps.apple.com/app/meduzavpn/id6755959724) |
+| iOS beta | 1.2.24 (178) | TestFlight; existing internal tester groups |
+| macOS beta | 1.2.24 (175) | TestFlight; existing tester groups |
+| Android public store | 175 live; 178 in review for full rollout | [Google Play](https://play.google.com/store/apps/details?id=app.meduzavpn) |
+| Android beta | 1.2.24 (178), internal testing | [Google Play testing](https://play.google.com/apps/testing/app.meduzavpn) |
+| macOS direct installer | 1.2.24 (178) | [Signed, notarized DMG](https://meduzavpn.com/download/macos) |
+| Android direct installer | 1.2.24 (178) | [Release-signed APK](https://meduzavpn.com/download/android) |
 | Windows graphical app | 1.2.23 | [Windows installer](https://meduzavpn.com/download/windows) |
-| Linux graphical app | 1.2.24-175, x86-64 | [DEB](https://meduzavpn.com/download/linux-desktop-deb) · [RPM](https://meduzavpn.com/download/linux-desktop-rpm) |
+| Linux graphical app | 1.2.24-178, x86-64 | [DEB](https://meduzavpn.com/download/linux-desktop-deb) · [RPM](https://meduzavpn.com/download/linux-desktop-rpm) |
 
 ### Command line and Linux service
 
 | Platform | Current release | Download |
 |---|---|---|
-| Linux CLI + daemon | 1.2.24-175 | [DEB](https://meduzavpn.com/download/linux-deb) · [RPM](https://meduzavpn.com/download/linux-rpm) · [tar.gz](https://meduzavpn.com/download/linux-tar) |
-| macOS CLI | 1.2.24-175 | [Universal archive](https://meduzavpn.com/download/cli-macos) |
-| Windows CLI | 1.2.24-175 | [Windows archive](https://meduzavpn.com/download/cli-windows) |
+| Linux CLI + daemon | 1.2.24-178 | [DEB](https://meduzavpn.com/download/linux-deb) · [RPM](https://meduzavpn.com/download/linux-rpm) · [tar.gz](https://meduzavpn.com/download/linux-tar) |
+| macOS CLI | 1.2.24-178 | [Universal archive](https://meduzavpn.com/download/cli-macos) |
+| Windows CLI | 1.2.24-178 | [Windows archive](https://meduzavpn.com/download/cli-windows) |
 
 Versioned files and their SHA-256 checksums are listed in [GitHub Releases](https://github.com/txrx13/meduzavpn/releases). The website links above remain stable between releases. See each release's asset list for the architectures actually provided.
 
@@ -236,10 +237,10 @@ interface on in the app's settings first.
 
 ## Verifying what you downloaded
 
-Each release has its own `SHA256SUMS` and detached signature. Release 175 covers all twelve app and CLI files attached to that release. Download the checksum file from the same release as your installer:
+Each release has its own `SHA256SUMS` and detached signature. Release 178 covers all twelve app and CLI files attached to that release. Download the checksum file from the same release as your installer:
 
 ```bash
-curl -fsSLO https://github.com/txrx13/meduzavpn/releases/download/v1.2.24-175/SHA256SUMS
+curl -fsSLO https://github.com/txrx13/meduzavpn/releases/download/v1.2.24-178/SHA256SUMS
 sha256sum -c SHA256SUMS --ignore-missing
 ```
 
