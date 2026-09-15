@@ -25,14 +25,15 @@
 
 ## What is new
 
-**[1.2.24 (173)](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-173)** adds editable Custom presets and smoother updates to location-based Split tunneling. iOS and macOS TestFlight, Google Play, Android APK, macOS DMG and Linux GUI downloads are on 173.
+**[1.2.24 (175)](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-175)** defaults new VPN selections to **MeduzaVPN ULTRA** where supported, and restores the choice between a free trial and immediate payment on Android. Store screenshots show the current app and its new features.
 
 | Release | Highlights |
 |---|---|
+| **[175 — ULTRA by default and a choice at checkout](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-175)** | New VPNs prefer ULTRA; saved manual protocol choices remain. Google Play checkout keeps both trial and paid base-plan offers. Updated app, CLI packages and screenshots. |
 | **[173 — Edit presets and keep your location](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-173)** | Edit preset names, networks and domains without rebuilding routes. Saving routing settings reconnects an affected active VPN and preserves the selected location. Updated macOS TestFlight packaging and shared data access for VPN extensions. |
-| **[172 — Location Split tunneling](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-172)** | One entry VPN, country and region presets, custom networks and domains, VPN/Direct destinations and an OTHERS fallback. ULTRA tunnels between your servers. Improved Devices spacing and Linux GUI runtime dependencies. Includes the current CLI packages. |
+| **[172 — Location Split tunneling](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-172)** | One entry VPN, country and region presets, custom networks and domains, VPN/Direct destinations and an OTHERS fallback. ULTRA tunnels between your servers. Improved Devices spacing and Linux GUI runtime dependencies. |
 
-**Release channels, checked 15 September 2026:** App Store build 173 has been submitted for review and is set to release automatically after Apple's approval. CLI packages remain at 172 because these latest changes affect the graphical apps. The Windows graphical app remains at 1.2.23. Signed apt/dnf repositories currently serve 158; use the direct downloads for Linux GUI 173 and CLI 172.
+**Release channels:** direct app and CLI downloads are build 175, except the Windows graphical app, which remains at 1.2.23. TestFlight and public App Store releases follow separate review processes. Signed apt/dnf repositories currently serve 158; use the direct packages for build 175.
 
 ## Split tunneling, per location
 
@@ -82,6 +83,7 @@ Country presets describe network registrations, which can differ from a website'
 
 | Feature | What you can do |
 |---|---|
+| **Subscription choice** | Start a free trial when eligible or choose **Pay now** to begin a paid subscription immediately. |
 | **Devices** | See where your account is signed in, identify the current device, inspect IP and activity details, and sign out another device or all other devices. |
 | **Connect On Demand** | Keep the VPN connected and reconnect automatically where supported. On Android, system-level blocking of connections without VPN is configured in Android's VPN settings. |
 | **Ask Mia** | Use the in-app Meduza assistant for help. |
@@ -99,6 +101,8 @@ Earlier ULTRA releases were checked with repeated downloads, DNS requests under 
 
 MeduzaVPN clients offer protocols supported by the selected platform and service, including **MeduzaVPN**, **MeduzaVPN ULTRA**, **WireGuard**, **OpenVPN**, **VLESS**, **VLESS 2.0 (XHTTP + REALITY)**, **Hysteria 2**, **Xray/V2Ray**, **Shadowsocks**, **Outline**, **SOCKS5**, and **SoftEther**. System IKEv2/IPsec support depends on the operating system.
 
+New VPN selections prefer **MeduzaVPN ULTRA** when the platform and service support it; an explicitly saved choice is preserved.
+
 ULTRA's graphical client integration is available on **iOS, Android and macOS** when enabled in the release. Windows and Linux GUI builds do not gain ULTRA merely by sharing the application version. The Linux CLI/service has a separate ULTRA implementation and requires the corresponding release configuration and device enrollment. A CLI on macOS or Windows controls the installed application rather than supplying a separate VPN engine.
 
 ---
@@ -107,7 +111,7 @@ ULTRA's graphical client integration is available on **iOS, Android and macOS** 
 
 ### Signed package repositories
 
-**Repository snapshot checked 15 September 2026: 1.2.24-158 for the x86-64 GUI and service.** For the current Linux GUI **173** and CLI/service **172**, use the [direct packages](#downloads) and install both the GUI and service packages when installing the app.
+**Repository snapshot checked 15 September 2026: 1.2.24-158 for the x86-64 GUI and service.** For the current Linux GUI and CLI/service **175**, use the [direct packages](#downloads) and install both the GUI and service packages when installing the app.
 
 The apt/dnf repositories resolve dependencies and integrate with system updates. Their packages and metadata are signed. Install the signing key before adding a repository.
 
@@ -178,22 +182,22 @@ Everything below is also on **[meduzavpn.com](https://meduzavpn.com)**.
 
 | Platform / channel | Current release | Download |
 |---|---|---|
-| iOS public store | 1.2.24 (173) submitted for Apple review | [App Store](https://apps.apple.com/us/app/meduzavpn/id6755959724) |
-| iOS and macOS beta | 1.2.24 (173) | TestFlight; access is managed through the existing tester groups |
-| Android public store | 1.2.24 (173), production | [Google Play](https://play.google.com/store/apps/details?id=app.meduzavpn) |
-| Android beta | 1.2.24 (173), internal testing | [Google Play testing](https://play.google.com/apps/testing/app.meduzavpn) — sign in with an invited tester account |
-| macOS direct installer | 1.2.24 (173) | [Signed, notarized DMG](https://meduzavpn.com/download/macos) |
-| Android direct installer | 1.2.24 (173) | [Release-signed APK](https://meduzavpn.com/download/android) |
+| iOS public store | 1.2.24 (175) submitted for Apple review | [App Store](https://apps.apple.com/us/app/meduzavpn/id6755959724) |
+| iOS and macOS beta | 1.2.24 (175) | TestFlight; access is managed through the existing tester groups |
+| Android public store | 1.2.24 (175), production | [Google Play](https://play.google.com/store/apps/details?id=app.meduzavpn) |
+| Android beta | 1.2.24 (175), internal testing | [Google Play testing](https://play.google.com/apps/testing/app.meduzavpn) — sign in with an invited tester account |
+| macOS direct installer | 1.2.24 (175) | [Signed, notarized DMG](https://meduzavpn.com/download/macos) |
+| Android direct installer | 1.2.24 (175) | [Release-signed APK](https://meduzavpn.com/download/android) |
 | Windows graphical app | 1.2.23 | [Windows installer](https://meduzavpn.com/download/windows) |
-| Linux graphical app | 1.2.24-173, x86-64 | [DEB](https://meduzavpn.com/download/linux-desktop-deb) · [RPM](https://meduzavpn.com/download/linux-desktop-rpm) |
+| Linux graphical app | 1.2.24-175, x86-64 | [DEB](https://meduzavpn.com/download/linux-desktop-deb) · [RPM](https://meduzavpn.com/download/linux-desktop-rpm) |
 
 ### Command line and Linux service
 
 | Platform | Current release | Download |
 |---|---|---|
-| Linux CLI + daemon | 1.2.24-172 | [DEB](https://meduzavpn.com/download/linux-deb) · [RPM](https://meduzavpn.com/download/linux-rpm) · [tar.gz](https://meduzavpn.com/download/linux-tar) |
-| macOS CLI | 1.2.24-172 | [Universal archive](https://meduzavpn.com/download/cli-macos) |
-| Windows CLI | 1.2.24-172 | [Windows archive](https://meduzavpn.com/download/cli-windows) |
+| Linux CLI + daemon | 1.2.24-175 | [DEB](https://meduzavpn.com/download/linux-deb) · [RPM](https://meduzavpn.com/download/linux-rpm) · [tar.gz](https://meduzavpn.com/download/linux-tar) |
+| macOS CLI | 1.2.24-175 | [Universal archive](https://meduzavpn.com/download/cli-macos) |
+| Windows CLI | 1.2.24-175 | [Windows archive](https://meduzavpn.com/download/cli-windows) |
 
 Versioned files and their SHA-256 checksums are listed in [GitHub Releases](https://github.com/txrx13/meduzavpn/releases). The website links above remain stable between releases. See each release's asset list for the architectures actually provided.
 
@@ -227,10 +231,10 @@ interface on in the app's settings first.
 
 ## Verifying what you downloaded
 
-Each release has its own `SHA256SUMS` and detached signature. Release 173 covers its four graphical installers; the unchanged CLI files and their checksums are in [release 172](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-172). Download the checksum file from the same release as your installer:
+Each release has its own `SHA256SUMS` and detached signature. Release 175 covers all twelve app and CLI files attached to that release. Download the checksum file from the same release as your installer:
 
 ```bash
-curl -fsSLO https://github.com/txrx13/meduzavpn/releases/download/v1.2.24-173/SHA256SUMS
+curl -fsSLO https://github.com/txrx13/meduzavpn/releases/download/v1.2.24-175/SHA256SUMS
 sha256sum -c SHA256SUMS --ignore-missing
 ```
 
