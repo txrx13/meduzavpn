@@ -25,15 +25,16 @@
 
 ## What is new
 
-**[1.2.24 (175)](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-175)** defaults new VPN selections to **MeduzaVPN ULTRA** where supported, and restores the choice between a free trial and immediate payment on Android. Store screenshots show the current app and its new features.
+**[1.2.24 (178)](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-178)** adds automatic backup API access, safer recovery after network failures, and improved domain rules for Split tunneling. MeduzaVPN ULTRA remains the default for new VPN selections.
 
 | Release | Highlights |
 |---|---|
+| **[178 — Backup API and safer recovery](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-178)** | The app and CLI select a backup API if the primary is unavailable. Read requests can recover without automatically repeating payments, orders or settings changes. Updated domain routing and ULTRA networking. |
 | **[175 — ULTRA by default and a choice at checkout](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-175)** | New VPNs prefer ULTRA; saved manual protocol choices remain. Google Play checkout keeps both trial and paid base-plan offers. Updated app, CLI packages and screenshots. |
 | **[173 — Edit presets and keep your location](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-173)** | Edit preset names, networks and domains without rebuilding routes. Saving routing settings reconnects an affected active VPN and preserves the selected location. Updated macOS TestFlight packaging and shared data access for VPN extensions. |
 | **[172 — Location Split tunneling](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-172)** | One entry VPN, country and region presets, custom networks and domains, VPN/Direct destinations and an OTHERS fallback. ULTRA tunnels between your servers. Improved Devices spacing and Linux GUI runtime dependencies. |
 
-**Release channels:** direct app and CLI downloads are build 175, except the Windows graphical app, which remains at 1.2.23. TestFlight and public App Store releases follow separate review processes. Signed apt/dnf repositories and direct Linux packages serve build 175.
+**Release channels:** direct app and CLI downloads are build 178, except the Windows graphical app, which remains at 1.2.23. TestFlight and public App Store releases follow separate review processes. Signed apt/dnf repositories and direct Linux packages serve build 178.
 
 ## Split tunneling, per location
 
@@ -89,6 +90,7 @@ Country presets describe network registrations, which can differ from a website'
 | **Ask Mia** | Use the in-app Meduza assistant for help. |
 | **Location settings** | Manage supported IPv4/IPv6 options, share connection configurations as files or QR codes, and see when an IP address can next be changed. |
 | **QR sign-in and desktop CLI** | Sign in to the command line with a QR code, list your VPNs, connect, check status and disconnect. On macOS/Windows the CLI controls the installed app. |
+| **Backup API access** | Automatically use the backup API when the primary address is unavailable. Your session is retained. An uncertain payment or order is not automatically submitted a second time. |
 | **ULTRA network recovery** | iOS and Android recover ULTRA when the physical network changes or returns after going offline. |
 
 Feature availability depends on the platform, installed build, service configuration and account access.
@@ -111,7 +113,7 @@ ULTRA's graphical client integration is available on **iOS, Android and macOS** 
 
 ### Signed package repositories
 
-**Repository snapshot checked 15 September 2026: 1.2.24-175.** The GUI is available for x86-64; the CLI and service are available for x86-64 and ARM64. Both apt/dnf repositories and [direct packages](#downloads) are current.
+**Repository snapshot checked 15 September 2026: 1.2.24-178.** The GUI is available for x86-64; the CLI and service are available for x86-64 and ARM64. Both apt/dnf repositories and [direct packages](#downloads) are current.
 
 The apt/dnf repositories resolve dependencies and integrate with system updates. Their packages and metadata are signed. Install the signing key before adding a repository.
 
