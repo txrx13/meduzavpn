@@ -25,10 +25,11 @@
 
 ## What is new
 
-**[1.2.26 (188)](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.26-188)** brings notifications sent from the server, so a service ending, a suspended service, an unfinished order or an unstarted trial reaches you even if the app has not been opened in a while. MeduzaVPN ULTRA now runs as a real packet engine in the Windows app. A trial can be turned into a one-time purchase instead of a subscription.
+**[1.2.26 (189)](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.26-189)** adds announcements in the app, behind a bell with an unread badge. Each VPN in your list now shows the country it is in, with a flag and the city, instead of the server's internal label. macOS, Windows and Linux show the launch logo instead of a black window, and the connect button no longer tears down a working tunnel when you re-open the app.
 
 | Release | Highlights |
 |---|---|
+| **[189 — Announcements, and the country your VPN is in](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.26-189)** | Announcements arrive in the app: a bell with an unread badge, the list, the full text, and a popup for the ones that earn it. Each VPN is labelled with a flag, the country and the city in your language, not with the server's internal name. macOS, Windows and Linux show the launch logo rather than a black window. Re-opening the app no longer disconnects a working tunnel, and the retry the app makes after a network change is supervised. |
 | **[188 — Notifications from the server, ULTRA on Windows](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.26-188)** | Reminders about services, orders, trials and one-time purchases are sent by the server, in your quiet hours and time zone, once each, and only for the reminders you left switched on. MeduzaVPN ULTRA works as a packet engine in the Windows app. A one-time purchase is offered next to the subscription. The connect button is legible in daylight and no longer spins forever after a network change. |
 | **[185 — Every protocol connects](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.25-185)** | Linux: ULTRA, MeduzaVPN, WireGuard, OpenVPN, Xray and V2Ray all connect, where six of thirteen failed before — pinned ULTRA signing keys, AmneziaWG 3 profile fields, the WireGuard handshake check, tunnel addressing and self-signed exit certificates. The Linux desktop app connects the ULTRA it offers. Android builds Hysteria 2 for 32-bit ARM. |
 | **[180 — Recent VPNs and DNS reliability](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-180)** | Recently connected locations appear first. Selection alone and failed connections do not update history. ULTRA DNS uses pipelined TCP requests, full TCP replies and bounded resource cleanup. |
@@ -37,7 +38,7 @@
 | **[173 — Edit presets and keep your location](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-173)** | Edit preset names, networks and domains without rebuilding routes. Saving routing settings reconnects an affected active VPN and preserves the selected location. Updated macOS TestFlight packaging and shared data access for VPN extensions. |
 | **[172 — Location Split tunneling](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-172)** | One entry VPN, country and region presets, custom networks and domains, VPN/Direct destinations and an OTHERS fallback. ULTRA tunnels between your servers. Improved Devices spacing and Linux GUI runtime dependencies. |
 
-**Release channels:** direct app and CLI downloads, the Windows installer and the signed apt/dnf repositories are build 188. Google Play carries 1.2.26 (188) on the production track. iOS and macOS have 1.2.26 (188) in TestFlight; the Apple public listings still show 1.2.25 until a new version is submitted and reviewed. Version numbering skips 186 and 187: App Store Connect closes a version's train once that version goes on sale, so the release is 1.2.26 on every platform rather than letting the stores fall behind the site.
+**Release channels:** direct app and CLI downloads, the Windows installer and the signed apt/dnf repositories are build 189. Google Play carries 1.2.26 (189) on the production track. iOS and macOS have 1.2.26 (189) in TestFlight; the Apple public listings still show 1.2.25 until a new version is submitted and reviewed. Version numbering skips 186 and 187: App Store Connect closes a version's train once that version goes on sale, so the release is 1.2.26 on every platform rather than letting the stores fall behind the site.
 
 ## Split tunneling, per location
 
@@ -117,7 +118,7 @@ ULTRA's graphical client integration is available on **iOS, Android, macOS and, 
 
 ### Signed package repositories
 
-**Repository snapshot checked 18 September 2026: 1.2.26-188.** The GUI is available for x86-64; the CLI and service are available for x86-64 and ARM64. Both apt/dnf repositories and [direct packages](#downloads) are current.
+**Repository snapshot checked 18 September 2026: 1.2.26-189.** The GUI is available for x86-64; the CLI and service are available for x86-64 and ARM64. Both apt/dnf repositories and [direct packages](#downloads) are current.
 
 The apt/dnf repositories resolve dependencies and integrate with system updates. Their packages and metadata are signed. Install the signing key before adding a repository.
 
@@ -184,30 +185,30 @@ source code**.
 
 Everything below is also on **[meduzavpn.com](https://meduzavpn.com)**.
 
-**Release status, checked 18 September 2026:** direct downloads, the Windows installer and the signed Linux repositories serve 1.2.26 (188). Google Play 1.2.26 (188) is on the production track. iOS and macOS 1.2.26 (188) are in TestFlight for existing internal testers. Public Apple store releases are separate from TestFlight.
+**Release status, checked 18 September 2026:** direct downloads, the Windows installer and the signed Linux repositories serve 1.2.26 (189). Google Play 1.2.26 (189) is on the production track. iOS and macOS 1.2.26 (189) are in TestFlight for existing internal testers. Public Apple store releases are separate from TestFlight.
 
 ### Applications and testing
 
 | Platform / channel | Current release | Download |
 |---|---|---|
-| iOS public store | 1.2.25 on sale; 1.2.26 (188) is in TestFlight | [App Store](https://apps.apple.com/us/app/meduzavpn/id6755959724) |
+| iOS public store | 1.2.25 on sale; 1.2.26 (189) is in TestFlight | [App Store](https://apps.apple.com/us/app/meduzavpn/id6755959724) |
 | macOS public store | 1.2.25 on sale; separate from the 1.2.26 DMG | [Mac App Store](https://apps.apple.com/app/meduzavpn/id6755959724) |
-| iOS beta | 1.2.26 (188) | TestFlight; existing internal tester groups |
-| macOS beta | 1.2.26 (188) | TestFlight; existing tester groups |
-| Android public store | 1.2.26 (188), production track | [Google Play](https://play.google.com/store/apps/details?id=app.meduzavpn) |
-| Android beta | 1.2.26 (188), internal testing | [Google Play testing](https://play.google.com/apps/testing/app.meduzavpn) |
-| macOS direct installer | 1.2.26 (188) | [Signed, notarized DMG](https://meduzavpn.com/download/macos) |
-| Android direct installer | 1.2.26 (188) | [Release-signed APK](https://meduzavpn.com/download/android) |
+| iOS beta | 1.2.26 (189) | TestFlight; existing internal tester groups |
+| macOS beta | 1.2.26 (189) | TestFlight; existing tester groups |
+| Android public store | 1.2.26 (189), production track | [Google Play](https://play.google.com/store/apps/details?id=app.meduzavpn) |
+| Android beta | 1.2.25 (184), internal testing | [Google Play testing](https://play.google.com/apps/testing/app.meduzavpn) |
+| macOS direct installer | 1.2.26 (189) | [Signed, notarized DMG](https://meduzavpn.com/download/macos) |
+| Android direct installer | 1.2.26 (189) | [Release-signed APK](https://meduzavpn.com/download/android) |
 | Windows graphical app | 1.2.26 | [Windows installer](https://meduzavpn.com/download/windows) |
-| Linux graphical app | 1.2.26-188, x86-64 | [DEB](https://meduzavpn.com/download/linux-desktop-deb) · [RPM](https://meduzavpn.com/download/linux-desktop-rpm) |
+| Linux graphical app | 1.2.26-189, x86-64 | [DEB](https://meduzavpn.com/download/linux-desktop-deb) · [RPM](https://meduzavpn.com/download/linux-desktop-rpm) |
 
 ### Command line and Linux service
 
 | Platform | Current release | Download |
 |---|---|---|
-| Linux CLI + daemon | 1.2.26-188 | [DEB](https://meduzavpn.com/download/linux-deb) · [RPM](https://meduzavpn.com/download/linux-rpm) · [tar.gz](https://meduzavpn.com/download/linux-tar) |
-| macOS CLI | 1.2.26-188 | [Universal archive](https://meduzavpn.com/download/cli-macos) |
-| Windows CLI | 1.2.26-188 | [Windows archive](https://meduzavpn.com/download/cli-windows) |
+| Linux CLI + daemon | 1.2.26-189 | [DEB](https://meduzavpn.com/download/linux-deb) · [RPM](https://meduzavpn.com/download/linux-rpm) · [tar.gz](https://meduzavpn.com/download/linux-tar) |
+| macOS CLI | 1.2.26-189 | [Universal archive](https://meduzavpn.com/download/cli-macos) |
+| Windows CLI | 1.2.26-189 | [Windows archive](https://meduzavpn.com/download/cli-windows) |
 
 Versioned files and their SHA-256 checksums are listed in [GitHub Releases](https://github.com/txrx13/meduzavpn/releases). The website links above remain stable between releases. See each release's asset list for the architectures actually provided.
 
@@ -244,7 +245,7 @@ interface on in the app's settings first.
 Each release has its own `SHA256SUMS` and detached signature, covering the twelve app and CLI files published to the website. The Windows installer is attached to the release as well, with its checksum printed in the release notes. Download the checksum file from the same release as your installer:
 
 ```bash
-curl -fsSLO https://github.com/txrx13/meduzavpn/releases/download/v1.2.26-188/SHA256SUMS
+curl -fsSLO https://github.com/txrx13/meduzavpn/releases/download/v1.2.26-189/SHA256SUMS
 sha256sum -c SHA256SUMS --ignore-missing
 ```
 
