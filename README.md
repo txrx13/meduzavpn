@@ -25,11 +25,11 @@
 
 ## What is new
 
-**[1.2.32 (198)](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.32-198)** brings the app to Android TV — every screen driven with the remote, ULTRA verified on a live service — lets you confirm a television's or router's sign-in from your phone with a QR code, names each signed-in device by what it is, and ships MeduzaVPN for OpenWrt routers: a package for x86/64, Filogic and MT7621 with a LuCI page, plus static daemons for arm64, armv7, mips and mipsel, ULTRA included.
+**[1.2.32 (200)](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.32-200)** brings the app to Android TV — every screen driven with the remote, ULTRA verified on a live service — lets you confirm a television's or router's sign-in from your phone with a QR code, names each signed-in device by what it is, and ships MeduzaVPN for OpenWrt routers: a package for x86/64, Filogic and MT7621 with a LuCI page, plus static daemons for arm64, armv7, mips and mipsel, ULTRA included.
 
 | Release | Highlights |
 |---|---|
-| **[198 — Android TV, sign-in confirmation, routers](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.32-198)** | The Android app runs on televisions and set-top boxes, entirely from the remote: visible focus everywhere, the VPN list clear of the overscan area, a protocol picker that fits 720p and 1080p; ULTRA, MeduzaVPN and WireGuard connect and disconnect on a live service. A TV or a router shows a code and a QR; the phone app confirms the sign-in. The device list names devices instead of showing raw headers. OpenWrt packages (x86/64, Filogic, MT7621) with a LuCI page and static daemons for four processor families, ULTRA built in; two daemon fixes from the router laboratory (`--state-dir` reaches the engines; `/etc/resolv.conf` is rewritten in place under bind mounts). iOS and macOS request the APNs token from the AppDelegate. |
+| **[200 — Android TV, sign-in confirmation, routers](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.32-200)** | The Android app runs on televisions and set-top boxes, entirely from the remote: visible focus everywhere, the VPN list clear of the overscan area, a protocol picker that fits 720p and 1080p; ULTRA, MeduzaVPN and WireGuard connect and disconnect on a live service. A TV or a router shows a code and a QR; the phone app confirms the sign-in. The device list names devices instead of showing raw headers. OpenWrt packages (x86/64, Filogic, MT7621) with a LuCI page and static daemons for four processor families, ULTRA built in; two daemon fixes from the router laboratory (`--state-dir` reaches the engines; `/etc/resolv.conf` is rewritten in place under bind mounts). iOS and macOS request the APNs token from the AppDelegate; tapping a push or a reminder opens its text, and the sheet is sized to the text. |
 | **[191 — Referral programme, and screens that stop flickering](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.28-191)** | Invite people with a link or a QR code and earn a share of every payment they make — the first one and every one after it, 5%, 10% or 15% depending on how many of your invitees have paid. Rewards wait out the refund window, then land on a balance you can spend on MeduzaVPN or withdraw. The list of invitees is anonymised. The invitation icon and the bell appear as soon as you sign in instead of after a restart; the server list stays on screen while it refreshes; the tariff, notification and subscription screens no longer slide under the title bar. |
 | **[189 — Announcements, and the country your VPN is in](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.26-189)** | Announcements arrive in the app: a bell with an unread badge, the list, the full text, and a popup for the ones that earn it. Each VPN is labelled with a flag, the country and the city in your language, not with the server's internal name. macOS, Windows and Linux show the launch logo rather than a black window. Re-opening the app no longer disconnects a working tunnel, and the retry the app makes after a network change is supervised. |
 | **[188 — Notifications from the server, ULTRA on Windows](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.26-188)** | Reminders about services, orders, trials and one-time purchases are sent by the server, in your quiet hours and time zone, once each, and only for the reminders you left switched on. MeduzaVPN ULTRA works as a packet engine in the Windows app. A one-time purchase is offered next to the subscription. The connect button is legible in daylight and no longer spins forever after a network change. |
@@ -40,7 +40,7 @@
 | **[173 — Edit presets and keep your location](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-173)** | Edit preset names, networks and domains without rebuilding routes. Saving routing settings reconnects an affected active VPN and preserves the selected location. Updated macOS TestFlight packaging and shared data access for VPN extensions. |
 | **[172 — Location Split tunneling](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-172)** | One entry VPN, country and region presets, custom networks and domains, VPN/Direct destinations and an OTHERS fallback. ULTRA tunnels between your servers. Improved Devices spacing and Linux GUI runtime dependencies. |
 
-**Release channels:** direct app and CLI downloads, the Windows installer and the signed apt/dnf repositories are build 198. Google Play carries 1.2.32 (198) on the production track. iOS and macOS have 1.2.32 (198) in TestFlight; the Apple TV app 1.0.0 (1) is in TestFlight for the internal group; the Apple public listings still show 1.2.25 until a new version is submitted and reviewed. Router packages are versioned with the daemon they carry (1.2.32-198) and listed under [Routers and televisions](#routers).
+**Release channels:** direct app and CLI downloads, the Windows installer and the signed apt/dnf repositories are build 198. Google Play carries 1.2.32 (200) on the production track. iOS and macOS have 1.2.32 (200) in TestFlight; the Apple TV app 1.0.0 (1) is in TestFlight for the internal group; the Apple public listings still show 1.2.25 until a new version is submitted and reviewed. Router packages carry daemon 1.2.31-196 -- the daemon has not changed since --  and listed under [Routers and televisions](#routers).
 
 ## Split tunneling, per location
 
@@ -162,7 +162,7 @@ ULTRA's graphical client integration is available on **iOS, Android, macOS and, 
 
 ### Signed package repositories
 
-**Repository snapshot checked 19 September 2026: 1.2.32-198.** The GUI is available for x86-64; the CLI and service are available for x86-64 and ARM64. Both apt/dnf repositories and [direct packages](#downloads) are current.
+**Repository snapshot checked 19 September 2026: 1.2.32-200.** The GUI is available for x86-64; the CLI and service are available for x86-64 and ARM64. Both apt/dnf repositories and [direct packages](#downloads) are current.
 
 The apt/dnf repositories resolve dependencies and integrate with system updates. Their packages and metadata are signed. Install the signing key before adding a repository.
 
@@ -229,31 +229,31 @@ source code**.
 
 Everything below is also on **[meduzavpn.com](https://meduzavpn.com)**.
 
-**Release status, checked 19 September 2026:** direct downloads, the Windows installer and the signed Linux repositories serve 1.2.32 (198). Google Play 1.2.32 (198) is on the production track. iOS and macOS 1.2.32 (198) are in TestFlight for existing internal testers; Apple TV 1.0.0 (1) is in TestFlight for the internal group. Public Apple store releases are separate from TestFlight.
+**Release status, checked 19 September 2026:** direct downloads, the Windows installer and the signed Linux repositories serve 1.2.32 (200). Google Play 1.2.32 (200) is on the production track. iOS and macOS 1.2.32 (200) are in TestFlight for existing internal testers; Apple TV 1.0.0 (1) is in TestFlight for the internal group. Public Apple store releases are separate from TestFlight.
 
 ### Applications and testing
 
 | Platform / channel | Current release | Download |
 |---|---|---|
-| iOS public store | 1.2.25 on sale; 1.2.32 (198) is in TestFlight | [App Store](https://apps.apple.com/us/app/meduzavpn/id6755959724) |
+| iOS public store | 1.2.25 on sale; 1.2.32 (200) is in TestFlight | [App Store](https://apps.apple.com/us/app/meduzavpn/id6755959724) |
 | macOS public store | 1.2.25 on sale; separate from the 1.2.32 DMG | [Mac App Store](https://apps.apple.com/app/meduzavpn/id6755959724) |
-| iOS beta | 1.2.32 (198) | TestFlight; existing internal tester groups |
-| macOS beta | 1.2.32 (198) | TestFlight; existing tester groups |
-| Android public store | 1.2.32 (198), production track; phones, tablets and Android TV | [Google Play](https://play.google.com/store/apps/details?id=app.meduzavpn) |
+| iOS beta | 1.2.32 (200) | TestFlight; existing internal tester groups |
+| macOS beta | 1.2.32 (200) | TestFlight; existing tester groups |
+| Android public store | 1.2.32 (200), production track; phones, tablets and Android TV | [Google Play](https://play.google.com/store/apps/details?id=app.meduzavpn) |
 | Apple TV beta | 1.0.0 (1), sign-in by code, ULTRA | TestFlight; internal group |
 | Android beta | 1.2.25 (184), internal testing | [Google Play testing](https://play.google.com/apps/testing/app.meduzavpn) |
-| macOS direct installer | 1.2.32 (198) | [Signed, notarized DMG](https://meduzavpn.com/download/macos) |
-| Android direct installer | 1.2.32 (198); installs on Android TV and Fire TV as well | [Release-signed APK](https://meduzavpn.com/download/android) |
+| macOS direct installer | 1.2.32 (200) | [Signed, notarized DMG](https://meduzavpn.com/download/macos) |
+| Android direct installer | 1.2.32 (200); installs on Android TV and Fire TV as well | [Release-signed APK](https://meduzavpn.com/download/android) |
 | Windows graphical app | 1.2.32 | [Windows installer](https://meduzavpn.com/download/windows) |
-| Linux graphical app | 1.2.32-198, x86-64 | [DEB](https://meduzavpn.com/download/linux-desktop-deb) · [RPM](https://meduzavpn.com/download/linux-desktop-rpm) |
+| Linux graphical app | 1.2.32-200, x86-64 | [DEB](https://meduzavpn.com/download/linux-desktop-deb) · [RPM](https://meduzavpn.com/download/linux-desktop-rpm) |
 
 ### Command line and Linux service
 
 | Platform | Current release | Download |
 |---|---|---|
-| Linux CLI + daemon | 1.2.32-198 | [DEB](https://meduzavpn.com/download/linux-deb) · [RPM](https://meduzavpn.com/download/linux-rpm) · [tar.gz](https://meduzavpn.com/download/linux-tar) |
-| macOS CLI | 1.2.32-198 | [Universal archive](https://meduzavpn.com/download/cli-macos) |
-| Windows CLI | 1.2.32-198 | [Windows archive](https://meduzavpn.com/download/cli-windows) |
+| Linux CLI + daemon | 1.2.32-200 | [DEB](https://meduzavpn.com/download/linux-deb) · [RPM](https://meduzavpn.com/download/linux-rpm) · [tar.gz](https://meduzavpn.com/download/linux-tar) |
+| macOS CLI | 1.2.32-200 | [Universal archive](https://meduzavpn.com/download/cli-macos) |
+| Windows CLI | 1.2.32-200 | [Windows archive](https://meduzavpn.com/download/cli-windows) |
 
 Versioned files and their SHA-256 checksums are listed in [GitHub Releases](https://github.com/txrx13/meduzavpn/releases). The website links above remain stable between releases. See each release's asset list for the architectures actually provided.
 
@@ -290,7 +290,7 @@ interface on in the app's settings first.
 Each release has its own `SHA256SUMS` and detached signature, covering the twelve app and CLI files published to the website. The Windows installer is attached to the release as well, with its checksum printed in the release notes. Download the checksum file from the same release as your installer:
 
 ```bash
-curl -fsSLO https://github.com/txrx13/meduzavpn/releases/download/v1.2.32-198/SHA256SUMS
+curl -fsSLO https://github.com/txrx13/meduzavpn/releases/download/v1.2.32-200/SHA256SUMS
 sha256sum -c SHA256SUMS --ignore-missing
 ```
 
