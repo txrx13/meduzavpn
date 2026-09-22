@@ -23,11 +23,15 @@
 
 ---
 
+## Latest release: [MeduzaVPN 1.2.36 (230)](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.36-230)
+
+**Direct downloads and apt/dnf: 1.2.36 (230).** [Download applications and CLI](#downloads) · [Install from apt / dnf](#install-on-linux) · [Release notes and all 21 downloads](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.36-230)
+
 ## What is new
 
 **1.2.36 (230)** makes renewal specific to the VPN that needs it. Stopped VPNs that are still eligible for restoration remain visible in the mobile/desktop apps and website account, with the server identity, paid-through date, restoration deadline and an action to renew. Renewal notifications open that VPN; supported notifications include a renewal action. After payment, the screen tracks payment confirmation and server restoration.
 
-This build also includes the latest main-branch fixes: notification inbox refresh on push and resume, a server list that stays visible while refreshing, a visible Reload indicator, size-based packet buffers with four iOS carriers, live Apple tunnel diagnostics that can be read and cleared and retained signing keys for ULTRA carrier recovery.
+This build also includes: notification inbox refresh on push and resume, a server list that stays visible while refreshing, a visible Reload indicator, size-based packet buffers with four iOS carriers, live Apple tunnel diagnostics that can be read and cleared and retained signing keys for ULTRA carrier recovery.
 
 Earlier releases:
 
@@ -169,11 +173,11 @@ ULTRA's graphical client integration is available on **iOS, Android, macOS and, 
 
 ## Install on Linux
 
-### Signed package repositories
+### Install from our apt / dnf repository (recommended)
 
 **Repository snapshot checked 22 September 2026: 1.2.36-230.** The GUI is available for x86-64; the CLI and service are available for x86-64 and ARM64. Both apt/dnf repositories and [direct packages](#downloads) are current.
 
-The apt/dnf repositories resolve dependencies and integrate with system updates. Their packages and metadata are signed. Install the signing key before adding a repository.
+The apt/dnf repositories resolve dependencies and integrate with system updates. Repository metadata is signed; RPM packages are also signed individually. Install the signing key before adding a repository.
 
 <details open>
 <summary><b>Debian · Ubuntu</b></summary>
@@ -188,6 +192,10 @@ echo "deb [signed-by=/usr/share/keyrings/meduzavpn.gpg] https://meduzavpn-builds
 sudo apt update
 sudo apt install meduzavpn-desktop   # the app (GUI) — pulls in the service
 sudo apt install meduzavpn           # a server: command line and service only
+
+# Already installed? Update the packages you use:
+sudo apt install --only-upgrade meduzavpn-desktop meduzavpn  # GUI + service
+# CLI/service only: sudo apt install --only-upgrade meduzavpn
 ```
 </details>
 
@@ -209,6 +217,10 @@ REPO
 
 sudo dnf install meduzavpn-desktop   # the app (GUI)
 sudo dnf install meduzavpn           # command line and service only
+
+# Already installed? Update the packages you use:
+sudo dnf upgrade --refresh meduzavpn-desktop meduzavpn      # GUI + service
+# CLI/service only: sudo dnf upgrade --refresh meduzavpn
 ```
 </details>
 
