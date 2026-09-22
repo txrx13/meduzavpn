@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://meduzavpn.com"><img alt="meduzavpn.com" src="https://img.shields.io/badge/meduzavpn.com-C37BD9?style=for-the-badge&labelColor=0A0E19"></a>
-  <a href="https://github.com/txrx13/meduzavpn/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/txrx13/meduzavpn?style=for-the-badge&label=release&labelColor=0A0E19&color=8199D6"></a>
+  <a href="#downloads"><img alt="Direct release 1.2.36 (230)" src="https://img.shields.io/badge/release-1.2.36%20(230)-8199D6?style=for-the-badge&labelColor=0A0E19"></a>
   <a href="#downloads"><img alt="Downloads" src="https://img.shields.io/badge/downloads-apps%20%26%20CLI-5A7AB7?style=for-the-badge&labelColor=0A0E19"></a>
   <img alt="No source" src="https://img.shields.io/badge/builds%20only-no%20source-8199D6?style=for-the-badge&labelColor=0A0E19">
 </p>
@@ -25,7 +25,11 @@
 
 ## What is new
 
-**[1.2.34 (219)](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.34-219)** keeps the notifications the service sends where they can be found again -- in the app's bell, with the icon number matching it -- and holds the launch logo at one size. Build 209 tells a customer whose operating system refused to save the VPN configuration exactly that, with the steps that fix it, instead of asking them to check a working internet connection; MeduzaVPN ULTRA passes the system's own reason back instead of discarding it. Build 207 tells a customer whose purchase the Play or App Store refused (Russia, Iran, "Billing Unavailable") that the website takes the same account, lists the methods that work there and opens the sign-in form; sends the same by mail; carries the phone's language with Google and Apple sign-ins so letters and pushes stop defaulting to English; and says "this e-mail is already registered" instead of a bare 400. Build 204 brings the week without payment to every app: the macOS app from the site, the Android APK from the site, Windows, Linux and the account page on meduzavpn.com all show the same welcome window — what the week includes, the price that follows, the exact date of the first charge and one button that links the card or the bank mandate and starts the VPN at once; the day before the first charge a letter and a push say what will be charged and how to cancel. Russian texts say «без оплаты». Build 203 let the Android app from the site pay with every method at once and gave website subscriptions a free first week;  the app to Android TV — every screen driven with the remote, ULTRA verified on a live service — opens the VPN list instantly from a local cache and keeps it still while refreshing, lets you confirm a television's or router's sign-in from your phone with a QR code, names each signed-in device by what it is, and ships MeduzaVPN for OpenWrt routers: a package for x86/64, Filogic and MT7621 with a LuCI page, plus static daemons for arm64, armv7, mips and mipsel, ULTRA included.
+**1.2.36 (230)** makes renewal specific to the VPN that needs it. Stopped VPNs that are still eligible for restoration remain visible in the mobile/desktop apps and website account, with the server identity, paid-through date, restoration deadline and an action to renew. Renewal notifications open that VPN; supported notifications include a renewal action. After payment, the screen tracks payment confirmation and server restoration.
+
+This build also includes the latest main-branch fixes: notification inbox refresh on push and resume, a server list that stays visible while refreshing, a visible Reload indicator, size-based packet buffers with four iOS carriers, live Apple tunnel diagnostics that can be read and cleared and retained signing keys for ULTRA carrier recovery.
+
+Earlier releases:
 
 | Release | Highlights |
 |---|---|
@@ -45,7 +49,7 @@
 | **[173 — Edit presets and keep your location](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-173)** | Edit preset names, networks and domains without rebuilding routes. Saving routing settings reconnects an affected active VPN and preserves the selected location. Updated macOS TestFlight packaging and shared data access for VPN extensions. |
 | **[172 — Location Split tunneling](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-172)** | One entry VPN, country and region presets, custom networks and domains, VPN/Direct destinations and an OTHERS fallback. ULTRA tunnels between your servers. Improved Devices spacing and Linux GUI runtime dependencies. |
 
-**Release channels:** direct app and CLI downloads, the Windows installer and the signed apt/dnf repositories are build 219. Google Play carries 1.2.34 (219) on the production track. On the App Store, iOS 1.2.33 (207) and macOS 1.2.32 are on sale; 1.2.34 (219) is submitted for review on both and is in TestFlight; the Apple TV app 1.0.0 (1) is in TestFlight for the internal group. The public listings update when Apple finishes its review. Router packages carry daemon 1.2.31-196 -- the daemon has not changed since --  and listed under [Routers and televisions](#routers).
+**Release channels:** the current direct release is **1.2.36 (230)**. Download links below point to our website and DigitalOcean distribution. Store submissions and direct downloads have separate availability: Apple and Google listings update after their review. See [release 230](releases/1.2.36-230.md) for the verified channel status, source revision and checksums. Older GitHub release assets are retained as historical releases; use the current download links below.
 
 ## Split tunneling, per location
 
@@ -167,7 +171,7 @@ ULTRA's graphical client integration is available on **iOS, Android, macOS and, 
 
 ### Signed package repositories
 
-**Repository snapshot checked 21 September 2026: 1.2.32-203.** The GUI is available for x86-64; the CLI and service are available for x86-64 and ARM64. Both apt/dnf repositories and [direct packages](#downloads) are current.
+**Repository snapshot checked 22 September 2026: 1.2.36-230.** The GUI is available for x86-64; the CLI and service are available for x86-64 and ARM64. Both apt/dnf repositories and [direct packages](#downloads) are current.
 
 The apt/dnf repositories resolve dependencies and integrate with system updates. Their packages and metadata are signed. Install the signing key before adding a repository.
 
@@ -234,33 +238,32 @@ source code**.
 
 Everything below is also on **[meduzavpn.com](https://meduzavpn.com)**.
 
-**Release status, checked 21 September 2026:** direct downloads, the Windows installer and the signed Linux repositories serve 1.2.34 (219). Google Play 1.2.34 (219) is on the production track. iOS 1.2.33 (207) and macOS 1.2.32 are on sale on the App Store, with 1.2.34 (219) submitted for review on both; Apple TV 1.0.0 (1) is in TestFlight for the internal group. Public Apple store releases are separate from TestFlight.
+**Release status, 22 September 2026:** the new direct release is 1.2.36 (230). Apple TestFlight availability and App Store review are separate steps; the public store can continue to offer the previous approved version while Apple reviews the update. See [release details and checksums](releases/1.2.36-230.md).
 
 ### Applications and testing
 
 | Platform / channel | Current release | Download |
 |---|---|---|
-| iOS public store | 1.2.33 (207) on sale; 1.2.34 (219) in review | [App Store](https://apps.apple.com/us/app/meduzavpn/id6755959724) |
-| macOS public store | 1.2.32 on sale; 1.2.34 (219) in review; separate from the DMG | [Mac App Store](https://apps.apple.com/app/meduzavpn/id6755959724) |
-| iOS beta | 1.2.34 (219) | TestFlight; existing internal tester groups |
-| macOS beta | 1.2.34 (219) | TestFlight; existing tester groups |
-| Android public store | 1.2.34 (219), production track; phones, tablets and Android TV | [Google Play](https://play.google.com/store/apps/details?id=app.meduzavpn) |
-| Apple TV beta | 1.0.0 (1), sign-in by code, ULTRA | TestFlight; internal group |
-| Android beta | 1.2.25 (184), internal testing | [Google Play testing](https://play.google.com/apps/testing/app.meduzavpn) |
-| macOS direct installer | 1.2.34 (219) | [Signed, notarized DMG](https://meduzavpn.com/download/macos) |
-| Android direct installer | 1.2.34 (219); installs on Android TV and Fire TV as well | [Release-signed APK](https://meduzavpn.com/download/android) |
-| Windows graphical app | 1.2.34 | [Windows installer](https://meduzavpn.com/download/windows) |
-| Linux graphical app | 1.2.34-219, x86-64 | [DEB](https://meduzavpn.com/download/linux-desktop-deb) · [RPM](https://meduzavpn.com/download/linux-desktop-rpm) |
+| iOS public store | 1.2.33 on sale; 1.2.36 (230) submitted for review | [App Store](https://apps.apple.com/us/app/meduzavpn/id6755959724) |
+| macOS public store | 1.2.32 on sale; 1.2.36 (230) submitted for review; separate from the DMG | [Mac App Store](https://apps.apple.com/app/meduzavpn/id6755959724) |
+| iOS beta | 1.2.36 (230) | TestFlight; existing internal tester groups |
+| macOS beta | 1.2.36 (230) | TestFlight; existing tester groups |
+| Android public store | 1.2.33 (207) public, rollout 100%; 1.2.36 (230) awaiting production review | [Google Play](https://play.google.com/store/apps/details?id=app.meduzavpn) |
+| Apple TV beta | 1.0.0 (230), sign-in by code, ULTRA | TestFlight; internal group; external beta review pending |
+| macOS direct installer | 1.2.36 (230) | [Signed, notarized DMG](https://meduzavpn.com/download/macos) |
+| Android direct installer | 1.2.36 (230); installs on Android TV and Fire TV as well | [Release-signed APK](https://meduzavpn.com/download/android) |
+| Windows graphical app | 1.2.36 (230) | [Windows installer](https://meduzavpn.com/download/windows) |
+| Linux graphical app | 1.2.36-230, x86-64 | [DEB](https://meduzavpn.com/download/linux-desktop-deb) · [RPM](https://meduzavpn.com/download/linux-desktop-rpm) |
 
 ### Command line and Linux service
 
 | Platform | Current release | Download |
 |---|---|---|
-| Linux CLI + daemon | 1.2.32-203 | [DEB](https://meduzavpn.com/download/linux-deb) · [RPM](https://meduzavpn.com/download/linux-rpm) · [tar.gz](https://meduzavpn.com/download/linux-tar) |
-| macOS CLI | 1.2.32-203 | [Universal archive](https://meduzavpn.com/download/cli-macos) |
-| Windows CLI | 1.2.32-203 | [Windows archive](https://meduzavpn.com/download/cli-windows) |
+| Linux CLI + daemon | 1.2.36-230 | [DEB](https://meduzavpn.com/download/linux-deb) · [RPM](https://meduzavpn.com/download/linux-rpm) · [tar.gz](https://meduzavpn.com/download/linux-tar) |
+| macOS CLI | 1.2.36-230 | [Universal archive](https://meduzavpn.com/download/cli-macos) |
+| Windows CLI | 1.2.36-230 | [Windows archive](https://meduzavpn.com/download/cli-windows) |
 
-Versioned files and their SHA-256 checksums are listed in [GitHub Releases](https://github.com/txrx13/meduzavpn/releases). The website links above remain stable between releases. See each release's asset list for the architectures actually provided.
+Versioned files and their signed SHA-256 checksums are listed in the [release manifest](https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/1.2.36-230/release.json). Downloads are hosted in DigitalOcean Spaces. The website links above remain stable between releases. See each release's asset list for the architectures actually provided.
 
 > [!IMPORTANT]
 > Installing Linux files manually? The graphical `meduzavpn-desktop` package depends on the `meduzavpn` service package. Install both, or use the signed repository above to resolve dependencies.
@@ -292,10 +295,13 @@ interface on in the app's settings first.
 
 ## Verifying what you downloaded
 
-Each release has its own `SHA256SUMS` and detached signature, covering the twelve app and CLI files published to the website. The Windows installer is attached to the release as well, with its checksum printed in the release notes. Download the checksum file from the same release as your installer:
+The [release manifest](https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/1.2.36-230/release.json) records each installer, CLI and router package with its source revision, size and SHA-256 digest. Verify the signed checksum file before checking a download:
 
 ```bash
-curl -fsSLO https://github.com/txrx13/meduzavpn/releases/download/v1.2.32-203/SHA256SUMS
+curl -fsSL https://meduzavpn-builds.fra1.digitaloceanspaces.com/repo/meduzavpn-archive-keyring.asc | gpg --import
+curl -fsSLO https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/1.2.36-230/SHA256SUMS
+curl -fsSLO https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/1.2.36-230/SHA256SUMS.asc
+gpg --verify SHA256SUMS.asc SHA256SUMS
 sha256sum -c SHA256SUMS --ignore-missing
 ```
 
