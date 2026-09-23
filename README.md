@@ -53,7 +53,7 @@ Earlier releases:
 | **[173 — Edit presets and keep your location](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-173)** | Edit preset names, networks and domains without rebuilding routes. Saving routing settings reconnects an affected active VPN and preserves the selected location. Updated macOS TestFlight packaging and shared data access for VPN extensions. |
 | **[172 — Location Split tunneling](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-172)** | One entry VPN, country and region presets, custom networks and domains, VPN/Direct destinations and an OTHERS fallback. ULTRA tunnels between your servers. Improved Devices spacing and Linux GUI runtime dependencies. |
 
-**Release channels:** the current direct release is **1.2.37 (231)**. Download links below point to our website and DigitalOcean distribution. Store submissions and direct downloads have separate availability: Apple and Google listings update after their review. See [release 231](releases/1.2.37-231.md) for the verified channel status, source revision and checksums. Older GitHub release assets are retained as historical releases; use the current download links below.
+**Release channels:** the current direct release is **1.2.37 (231)**. Download links below point to our website and DigitalOcean distribution. Store submissions and direct downloads have separate availability: Apple listings update after review. Google Play is unchanged in this release. See [release 231](releases/1.2.37-231.md) for the verified channel status, source revision and checksums. Older GitHub release assets are retained as historical releases; use the current download links below.
 
 ## Split tunneling, per location
 
