@@ -23,9 +23,9 @@
 
 ---
 
-## Latest release: [MeduzaVPN 1.2.37 (231)](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.37-231)
+## Latest release: [MeduzaVPN 1.2.37 (231)](releases/1.2.37-231.md)
 
-**Direct downloads and apt/dnf: 1.2.37 (231).** [Download applications and CLI](#downloads) · [Install from apt / dnf](#install-on-linux) · [Release notes and all 21 downloads](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.37-231)
+**Direct downloads and apt/dnf: 1.2.37 (231).** [Download applications and CLI](#downloads) · [Install from apt / dnf](#install-on-linux) · [Release notes and all 21 downloads](releases/1.2.37-231.md)
 
 ## What is new
 
