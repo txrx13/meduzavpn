@@ -261,7 +261,7 @@ Everything below is also on **[meduzavpn.com](https://meduzavpn.com)**.
 | iOS beta | 1.2.37 (231) | TestFlight; existing internal tester groups |
 | macOS beta | 1.2.37 (231) | TestFlight; existing tester groups |
 | Android public store | Not updated in this release; use the direct APK for 1.2.37 (231) | [Google Play](https://play.google.com/store/apps/details?id=app.meduzavpn) |
-| Apple TV beta | 1.0.0 (231), sign-in by code, ULTRA | TestFlight; internal group; external beta review pending |
+| Apple TV beta | 1.0.0 (231), sign-in by code, ULTRA | TestFlight; internal group; the previous build remains in external beta review |
 | macOS direct installer | 1.2.37 (231) | [Signed, notarized DMG](https://meduzavpn.com/download/macos) |
 | Android direct installer | 1.2.37 (231); installs on Android TV and Fire TV as well | [Release-signed APK](https://meduzavpn.com/download/android) |
 | Windows graphical app | 1.2.37 (231) | [Windows installer](https://meduzavpn.com/download/windows) |
