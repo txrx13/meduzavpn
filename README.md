@@ -175,7 +175,7 @@ ULTRA's graphical client integration is available on **iOS, Android, macOS and, 
 
 ### Install from our apt / dnf repository (recommended)
 
-**Repository snapshot checked 24 September 2026: 1.2.42-242.** The GUI is available for x86-64; the CLI and service are available for x86-64 and ARM64. Both apt/dnf repositories and [direct packages](#downloads) are current.
+**Repository snapshot checked 25 September 2026: 1.2.42-242.** The GUI is available for x86-64; the CLI and service are available for x86-64 and ARM64. Both apt/dnf repositories and [direct packages](#downloads) are current.
 
 The apt/dnf repositories resolve dependencies and integrate with system updates. Repository metadata is signed; RPM packages are also signed individually. Install the signing key before adding a repository.
 
@@ -261,7 +261,7 @@ Everything below is also on **[meduzavpn.com](https://meduzavpn.com)**.
 | iOS beta | 1.2.42 (242) | TestFlight; existing internal tester groups |
 | macOS beta | 1.2.42 (242) | TestFlight; existing tester groups |
 | Android public store | 1.2.42 (242) submitted to production review | [Google Play](https://play.google.com/store/apps/details?id=app.meduzavpn) |
-| Apple TV beta | 1.0.0 (242), sign-in by code and ULTRA; production review submission in progress | TestFlight; internal group; public App Store submission in progress |
+| Apple TV beta | 1.0.0 (242), sign-in by code and ULTRA; submitted for App Store review | TestFlight; internal group; public App Store review pending |
 | macOS direct installer | 1.2.42 (242) | [Signed, notarized DMG](https://meduzavpn.com/download/macos) |
 | Android direct installer | 1.2.42 (242); installs on Android TV and Fire TV as well | [Release-signed APK](https://meduzavpn.com/download/android) |
 | Windows graphical app | 1.2.42 (242) | [Windows installer](https://meduzavpn.com/download/windows) |
