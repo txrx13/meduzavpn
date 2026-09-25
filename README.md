@@ -25,7 +25,7 @@
 
 ## Current release: [MeduzaVPN 1.2.43 (249)](releases/1.2.43-249.md)
 
-**All direct downloads and signed apt/dnf packages are build 249:** Android/Android TV, Windows, macOS, Linux, desktop CLI, routers and OpenWrt/LuCI. iOS and macOS 249 are available in the existing internal TestFlight group. Public App Store, Google Play and tvOS releases are separate channels and are not updated by this publication.
+**All direct downloads and signed apt/dnf packages are build 249:** Android/Android TV, Windows, macOS, Linux, desktop CLI, routers and OpenWrt/LuCI. iOS and macOS 249 are available in the existing internal TestFlight group. iOS and macOS 249 are WAITING_FOR_REVIEW for public release, and Android 249 has been submitted to Google Play production review. tvOS is unchanged.
 
 ### What changed
 
@@ -254,17 +254,17 @@ source code**.
 
 Everything below is also on **[meduzavpn.com](https://meduzavpn.com)**.
 
-**Release status, 25 September 2026:** direct downloads are build 249. iOS and macOS build 249 are available in the existing internal TestFlight group. This publication does not submit a new public-store or tvOS release.
+**Release status, 25 September 2026:** direct downloads are build 249. iOS and macOS build 249 are available in the existing internal TestFlight group. iOS/macOS 249 are awaiting App Store review; Android 249 has been submitted to Google Play production review. tvOS is unchanged.
 
 ### Applications and testing
 
 | Platform / channel | Current release | Download |
 |---|---|---|
-| iOS public store | Approved store version; unchanged here | [App Store](https://apps.apple.com/us/app/meduzavpn/id6755959724) |
-| macOS public store | Approved store version; unchanged here | [Mac App Store](https://apps.apple.com/app/meduzavpn/id6755959724) |
+| iOS public store | 1.2.43 (249) awaiting review; public availability follows approval | [App Store](https://apps.apple.com/us/app/meduzavpn/id6755959724) |
+| macOS public store | 1.2.43 (249) awaiting review; public availability follows approval | [Mac App Store](https://apps.apple.com/app/meduzavpn/id6755959724) |
 | iOS beta | 1.2.43 (249), available for internal testing | TestFlight; existing internal tester groups |
 | macOS beta | 1.2.43 (249), available for internal testing | TestFlight; existing internal tester groups |
-| Android public store | Existing Google Play release; unchanged here | [Google Play](https://play.google.com/store/apps/details?id=app.meduzavpn) |
+| Android public store | 1.2.43 (249) submitted for production review | [Google Play](https://play.google.com/store/apps/details?id=app.meduzavpn) |
 | Apple TV | Existing store/TestFlight release; 249 prepared but not uploaded here | TestFlight / App Store |
 | macOS direct installer | 1.2.43 (249) | [Signed, notarized DMG](https://meduzavpn.com/download/macos) |
 | Android direct installer | 1.2.43 (249); also Android TV and Fire TV | [Release-signed APK](https://meduzavpn.com/download/android) |

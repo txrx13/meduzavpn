@@ -3,7 +3,7 @@
   "source_repository": "AdelBekov/meduza-app",
   "source_branch": "main",
   "source_sha": "84882e393cf139c0240f21e2051bff9ab19c83c7",
-  "checked_at": "2026-09-25T13:51:41.362926+00:00",
+  "checked_at": "2026-09-25T14:16:19.824884+00:00",
   "files": [
     {
       "key": "MeduzaVPN.apk",
@@ -197,10 +197,10 @@
   ],
   "scope": "all-direct-downloads",
   "stores": {
-    "ios": "1.2.43 (249): VALID; IN_BETA_TESTING, existing internal QA group",
-    "macos": "1.2.43 (249): VALID; IN_BETA_TESTING, existing internal QA group",
-    "tvos": "249 prepared, not uploaded in this publication",
-    "google_play": "unchanged by this publication"
+    "ios": "1.2.43 (249): TestFlight IN_BETA_TESTING; App Store WAITING_FOR_REVIEW",
+    "macos": "1.2.43 (249): TestFlight IN_BETA_TESTING; Mac App Store WAITING_FOR_REVIEW",
+    "tvos": "Unchanged: 1.0.0 (244) remains WAITING_FOR_REVIEW; build 249 not uploaded",
+    "google_play": "1.2.43 (249): production edit committed and sent for review"
   },
   "channel_notes": "All 21 direct downloads are built from the same published application main revision. Physical iOS/macOS testing remains with the owner; this is not a claim of completed QA on every platform."
 }
