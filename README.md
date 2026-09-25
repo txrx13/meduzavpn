@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://meduzavpn.com"><img alt="meduzavpn.com" src="https://img.shields.io/badge/meduzavpn.com-C37BD9?style=for-the-badge&labelColor=0A0E19"></a>
-  <a href="#downloads"><img alt="Direct release 1.2.43 (249)" src="https://img.shields.io/badge/release-1.2.43%20(249)-8199D6?style=for-the-badge&labelColor=0A0E19"></a>
+  <a href="#downloads"><img alt="Windows release 1.2.43 (250)" src="https://img.shields.io/badge/Windows-1.2.43%20(250)-8199D6?style=for-the-badge&labelColor=0A0E19"></a>
   <a href="#downloads"><img alt="Downloads" src="https://img.shields.io/badge/downloads-apps%20%26%20CLI-5A7AB7?style=for-the-badge&labelColor=0A0E19"></a>
   <img alt="No source" src="https://img.shields.io/badge/builds%20only-no%20source-8199D6?style=for-the-badge&labelColor=0A0E19">
 </p>
@@ -23,22 +23,23 @@
 
 ---
 
-## Current release: [MeduzaVPN 1.2.43 (249)](releases/1.2.43-249.md)
+## Current Windows release: [MeduzaVPN 1.2.43 (250)](releases/1.2.43-250.md)
 
-**All direct downloads and signed apt/dnf packages are build 249:** Android/Android TV, Windows, macOS, Linux, desktop CLI, routers and OpenWrt/LuCI. iOS and macOS 249 are available in the existing internal TestFlight group. iOS and macOS 249 are WAITING_FOR_REVIEW for public release, and Android 249 has been submitted to Google Play production review. tvOS is unchanged.
+**Windows graphical app: build 250.** Other direct downloads, desktop CLI and apt/dnf packages remain on build 249. This Windows update does not change App Store, TestFlight, Google Play or tvOS submissions.
 
-### What changed
+### What changed on Windows
 
-- ULTRA daemon shutdown waits for DNS and route cleanup before exiting, fixing failed reconnection after a service restart on Linux/OpenWrt.
-- Linux desktop packages include the daemon and enable the desktop service on installation; headless core packages keep explicit service activation.
-- Includes connection-status recovery, Windows routing/DNS/uninstall fixes and the protocol-picker layout correction already merged into the application main branch.
+- ULTRA startup keeps the connection status responsive when the server is slow or unreachable.
+- A pending connection can be canceled promptly, including before the network connection is established.
+- Startup timeout diagnostics retain a bounded network/SSH failure category to help distinguish connection failures.
 
-[Downloads](#downloads) · [apt/dnf installation](#install-on-linux) · [Release notes, source revision and checksums](releases/1.2.43-249.md)
+[Windows download](https://meduzavpn.com/download/windows) · [All downloads](#downloads) · [Release notes, source revision and checksums](releases/1.2.43-250.md)
 
 Earlier releases:
 
 | Release | Highlights |
 |---|---|
+| **[249 — application, CLI and router updates](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.43-249)** | Baseline for the other direct downloads and apt/dnf packages. See the release notes for platform-specific validation and store submission status. |
 | **[247 — Windows: uninstall without an error box](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.43-247)** | Windows only. Removing the app no longer stops at "The specified service does not exist as an installed service"; a silent uninstall no longer waits forever. The release was checked end to end on a clean Windows 11 machine: all five protocols connect, split tunneling and DNS inside the tunnel work. |
 | **[246 — Windows: an honest button during outages, DNS only through the VPN](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.43-246)** | Windows only. While the connection to the server is being restored the button shows "Connecting…" instead of "connected". Name lookups go only through the tunnel, also while it reconnects, so the provider's resolver is never asked and split rules by domain keep working. |
 | **[245 — Windows: split "direct" works, a dropped tunnel comes back](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.43-245)** | Windows only, on top of 244. Split tunneling "direct" connections are bound to the real network instead of looping into the tunnel. A tunnel whose connections to the server dropped shows "connecting" and reconnects by itself with all traffic kept inside the VPN. The profile renewed in the background is applied, so a session outlives a day. |
@@ -59,7 +60,7 @@ Earlier releases:
 | **[173 — Edit presets and keep your location](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-173)** | Edit preset names, networks and domains without rebuilding routes. Saving routing settings reconnects an affected active VPN and preserves the selected location. Updated macOS TestFlight packaging and shared data access for VPN extensions. |
 | **[172 — Location Split tunneling](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-172)** | One entry VPN, country and region presets, custom networks and domains, VPN/Direct destinations and an OTHERS fallback. ULTRA tunnels between your servers. Improved Devices spacing and Linux GUI runtime dependencies. |
 
-**Release channels:** direct downloads and apt/dnf are **1.2.43 (249)**. TestFlight and public stores have independent availability. See [release 249](releases/1.2.43-249.md) for the scope, verification results and remaining device-testing limits. Historical releases remain available.
+**Release channels:** the Windows graphical app is **1.2.43 (250)**; other direct downloads and apt/dnf remain **1.2.43 (249)**. TestFlight and public stores have independent availability. See [release 249](releases/1.2.43-249.md) for the scope, verification results and remaining device-testing limits. Historical releases remain available.
 
 ## Split tunneling, per location
 
@@ -254,7 +255,9 @@ source code**.
 
 Everything below is also on **[meduzavpn.com](https://meduzavpn.com)**.
 
-**Release status, 25 September 2026:** direct downloads are build 249. iOS and macOS build 249 are available in the existing internal TestFlight group. iOS/macOS 249 are awaiting App Store review; Android 249 has been submitted to Google Play production review. tvOS is unchanged.
+**Windows update, 26 September 2026:** the Windows graphical app is build 250; other direct downloads remain build 249.
+
+**Other channel status last checked 25 September 2026:** iOS and macOS build 249 are available in the existing internal TestFlight group. iOS/macOS 249 are awaiting App Store review; Android 249 has been submitted to Google Play production review. tvOS is unchanged.
 
 ### Applications and testing
 
@@ -268,7 +271,7 @@ Everything below is also on **[meduzavpn.com](https://meduzavpn.com)**.
 | Apple TV | Existing store/TestFlight release; 249 prepared but not uploaded here | TestFlight / App Store |
 | macOS direct installer | 1.2.43 (249) | [Signed, notarized DMG](https://meduzavpn.com/download/macos) |
 | Android direct installer | 1.2.43 (249); also Android TV and Fire TV | [Release-signed APK](https://meduzavpn.com/download/android) |
-| Windows graphical app | 1.2.43 (249) | [Windows installer](https://meduzavpn.com/download/windows) |
+| Windows graphical app | 1.2.43 (250) | [Windows installer](https://meduzavpn.com/download/windows) |
 | Linux graphical app | 1.2.43-249, x86-64 | [DEB](https://meduzavpn.com/download/linux-desktop-deb) · [RPM](https://meduzavpn.com/download/linux-desktop-rpm) |
 
 ### Command line and Linux service
@@ -279,7 +282,7 @@ Everything below is also on **[meduzavpn.com](https://meduzavpn.com)**.
 | macOS CLI | 1.2.43-249 | [Universal archive](https://meduzavpn.com/download/cli-macos) |
 | Windows CLI | 1.2.43-249 | [Windows archive](https://meduzavpn.com/download/cli-windows) |
 
-Versioned files and signed SHA-256 checksums are listed in the [release manifest](https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/1.2.43-249/release.json). Downloads are hosted in DigitalOcean Spaces. Website download links stay stable between releases.
+Versioned files and signed SHA-256 checksums are listed in the [release manifest](https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/1.2.43-250/release.json). Downloads are hosted in DigitalOcean Spaces. Website download links stay stable between releases.
 
 > [!IMPORTANT]
 > The Linux graphical `meduzavpn-desktop` package is standalone and includes its daemon. Install it on a desktop, or choose `meduzavpn` for a headless CLI/service installation.
@@ -311,12 +314,12 @@ interface on in the app's settings first.
 
 ## Verifying what you downloaded
 
-The [release manifest](https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/1.2.43-249/release.json) records each installer, CLI and router package with its source revision, size and SHA-256 digest. Verify the signed checksum file before checking a download:
+The [release manifest](https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/1.2.43-250/release.json) records each installer, CLI and router package with its source revision, size and SHA-256 digest. Verify the signed checksum file before checking a download:
 
 ```bash
 curl -fsSL https://meduzavpn-builds.fra1.digitaloceanspaces.com/repo/meduzavpn-archive-keyring.asc | gpg --import
-curl -fsSLO https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/1.2.43-249/SHA256SUMS
-curl -fsSLO https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/1.2.43-249/SHA256SUMS.asc
+curl -fsSLO https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/1.2.43-250/SHA256SUMS
+curl -fsSLO https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/1.2.43-250/SHA256SUMS.asc
 gpg --verify SHA256SUMS.asc SHA256SUMS
 sha256sum -c SHA256SUMS --ignore-missing
 ```
