@@ -25,18 +25,21 @@
 
 ## Latest release: [MeduzaVPN 1.2.43 (244)](releases/1.2.43-244.md)
 
-**Android and macOS downloads: 1.2.43 (244). Windows GUI: 1.2.42 (243). Linux, routers and apt/dnf: 1.2.42 (242).** [Download applications and CLI](#downloads) · [Install from apt / dnf](#install-on-linux) · [Release notes and all 21 downloads](releases/1.2.43-244.md)
+**Android and macOS downloads: 1.2.43 (244). Windows GUI: 1.2.43 (245). Linux, routers and apt/dnf: 1.2.42 (242).** [Download applications and CLI](#downloads) · [Install from apt / dnf](#install-on-linux) · [Release notes and all 21 downloads](releases/1.2.43-244.md)
+
+**Windows update: [1.2.43 (245)](releases/1.2.43-245.md).** Split tunneling "direct" rules work on Windows. A dropped ULTRA tunnel reconnects by itself instead of staying "connected" without internet, and the renewed profile keeps sessions alive beyond a day.
 
 ## What is new
 
 **1.2.43 (244)** adds phone-based QR sign-in on Android TV, restores unfinished orders with their chosen settings, and improves checkout behavior. It includes the Windows ULTRA routing and leak-detection fixes from build 243, together with the compact server list and connection improvements from build 242.
 
-Apple and Android native VPN components are rebuilt from the published release source. Windows, Linux and router builds are pending; their existing downloads remain available.
+Apple and Android native VPN components are rebuilt from the published release source. Linux and router builds are pending; their existing downloads remain available.
 
 Earlier releases:
 
 | Release | Highlights |
 |---|---|
+| **[245 — Windows: split "direct" works, a dropped tunnel comes back](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.43-245)** | Windows only, on top of 244. Split tunneling "direct" connections are bound to the real network instead of looping into the tunnel. A tunnel whose connections to the server dropped shows "connecting" and reconnects by itself with all traffic kept inside the VPN. The profile renewed in the background is applied, so a session outlives a day. |
 | **[243 — Windows: ULTRA captures all traffic, and a leak is reported](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.42-243)** | Windows only. The ULTRA tunnel takes the system's traffic with two half-routes, which win over any provider route. It proves the capture before it says "connected", and refuses with a plain explanation when another program holds the routes. The connection check compares the exit address and reports `leak` and `routes`. The Windows ULTRA engine is rebuilt from the current core. |
 | **[219 — notifications in the bell, one unread number, a steady launch screen](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.34-219)** | Notifications the service sends now live in the app's bell as well as the operating system's, and the number on the icon, the number on the bell and the count inside it are one number, counted from the notices the app is holding — so a notice read on one device cannot leave a number on another device's icon with nothing unread to take it off. The launch logo no longer changes size between the system screen and the app's own. A tunnel that goes quiet is rebuilt rather than left looking connected; where a store will not take payment, the app takes it with every method the website has; television sign-in screens keep clear of the cut-off edge. |
 | **[209 — a refused VPN configuration says so](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.34-209)** | When the operating system refuses to save a VPN configuration — the alert that asks the customer to allow it was dismissed or declined — the app now names that instead of blaming the network, and the MeduzaVPN ULTRA bridge passes the system's own reason back rather than discarding it. A configuration write that lost a race against the app's kill-switch housekeeping is retried once. Version 1.2.34. |
@@ -251,7 +254,7 @@ source code**.
 
 Everything below is also on **[meduzavpn.com](https://meduzavpn.com)**.
 
-**Release status, 25 September 2026:** Android and macOS downloads are at 1.2.43 (244); Windows GUI remains at 1.2.42 (243), and Linux/router packages remain at 1.2.42 (242). Apple TestFlight availability and App Store review are separate steps; the public store can continue to offer the previous approved version while Apple reviews the update. See [release details and checksums](releases/1.2.43-244.md).
+**Release status, 25 September 2026:** Android and macOS downloads are at 1.2.43 (244); Windows GUI is at 1.2.43 (245), and Linux/router packages remain at 1.2.42 (242). Apple TestFlight availability and App Store review are separate steps; the public store can continue to offer the previous approved version while Apple reviews the update. See [release details and checksums](releases/1.2.43-244.md).
 
 ### Applications and testing
 
@@ -265,7 +268,7 @@ Everything below is also on **[meduzavpn.com](https://meduzavpn.com)**.
 | Apple TV beta | 1.0.0 (244), sign-in by code and ULTRA; submitted for App Store review | TestFlight; internal group; public App Store review pending |
 | macOS direct installer | 1.2.43 (244) | [Signed, notarized DMG](https://meduzavpn.com/download/macos) |
 | Android direct installer | 1.2.43 (244); installs on Android TV and Fire TV as well | [Release-signed APK](https://meduzavpn.com/download/android) |
-| Windows graphical app | 1.2.42 (243); 244 pending | [Windows installer](https://meduzavpn.com/download/windows) |
+| Windows graphical app | 1.2.43 (245), Windows update ([notes](releases/1.2.43-245.md)) | [Windows installer](https://meduzavpn.com/download/windows) |
 | Linux graphical app | 1.2.42-242, x86-64 | [DEB](https://meduzavpn.com/download/linux-desktop-deb) · [RPM](https://meduzavpn.com/download/linux-desktop-rpm) |
 
 ### Command line and Linux service
