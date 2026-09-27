@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://meduzavpn.com"><img alt="meduzavpn.com" src="https://img.shields.io/badge/meduzavpn.com-C37BD9?style=for-the-badge&labelColor=0A0E19"></a>
-  <a href="#downloads"><img alt="Windows release 1.2.43 (250)" src="https://img.shields.io/badge/Windows-1.2.43%20(250)-8199D6?style=for-the-badge&labelColor=0A0E19"></a>
+  <a href="#downloads"><img alt="Release 1.2.44 (256)" src="https://img.shields.io/badge/release-1.2.44%20(256)-8199D6?style=for-the-badge&labelColor=0A0E19"></a>
   <a href="#downloads"><img alt="Downloads" src="https://img.shields.io/badge/downloads-apps%20%26%20CLI-5A7AB7?style=for-the-badge&labelColor=0A0E19"></a>
   <img alt="No source" src="https://img.shields.io/badge/builds%20only-no%20source-8199D6?style=for-the-badge&labelColor=0A0E19">
 </p>
@@ -23,23 +23,30 @@
 
 ---
 
-## Current Windows release: [MeduzaVPN 1.2.43 (250)](releases/1.2.43-250.md)
+## Current release: [MeduzaVPN 1.2.44 (256)](releases/1.2.44-256.md)
 
-**Windows graphical app: build 250.** Other direct downloads, desktop CLI and apt/dnf packages remain on build 249. This Windows update does not change App Store, TestFlight, Google Play or tvOS submissions.
+**Build 256 for Android (website APK), Windows (installer and CLI), Linux (packages, archives, apt/dnf) and routers/OpenWrt**, all from one published application revision. The macOS DMG and macOS CLI are published separately from Apple hardware. Store channels are unchanged by this publication.
 
-### What changed on Windows
+### What changed
 
-- ULTRA startup keeps the connection status responsive when the server is slow or unreachable.
-- A pending connection can be canceled promptly, including before the network connection is established.
-- Startup timeout diagnostics retain a bounded network/SSH failure category to help distinguish connection failures.
+- **ULTRA connects faster and holds up better.** Pipelined SSH authentication for ULTRA/1 and ULTRA/2 carriers; a carrier is in service with its first session; ULTRA/2 standby carrier with a racing dialer, 8 carriers on desktop and 4 on phones; the core reports a per-stage connect timeline.
+- **Split downloads no longer freeze.** On an ULTRA/2 split (entry → exit) a chunk dropped by the receiver is sent again instead of stalling the stream.
+- **Datagram traffic survives an outage.** The backlog a carrier flushes after a blackout is kept, and one retransmission timeout no longer counts as a stall.
+- **Split tunneling switch fixed.** Turning split tunneling on in a VPN's settings no longer sends every unmatched site past the VPN: OTHERS follows the entry VPN unless you choose otherwise, a Direct OTHERS shows a warning, and the connection check names this case.
+- **Signed ULTRA profile is cached** and its revision checked in the background, so a connect no longer re-enrolls every time.
+- **Faster start from Russia.** The app adopts the first API origin that answers instead of waiting for a silent one, and opens the website the server chooses (meduzacore.com for Russia).
+- **Location picker.** The chosen location is listed first and outlined; the "Recommended" badge no longer looks like the selection; no "Works from Russia" badge on Russia itself.
+- **Connect On Demand** starts the tunnel on the VPN you picked rather than a previously stored one.
+- **Notifications** permission is asked again at a moment of value, with the app's own explanation first.
 
-[Windows download](https://meduzavpn.com/download/windows) · [All downloads](#downloads) · [Release notes, source revision and checksums](releases/1.2.43-250.md)
+[Windows download](https://meduzavpn.com/download/windows) · [Android APK](https://meduzavpn.com/download/android) · [All downloads](#downloads) · [Release notes, source revision and checksums](releases/1.2.44-256.md)
 
 Earlier releases:
 
 | Release | Highlights |
 |---|---|
-| **[249 — application, CLI and router updates](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.43-249)** | Baseline for the other direct downloads and apt/dnf packages. See the release notes for platform-specific validation and store submission status. |
+| **[250 — Windows: responsive ULTRA startup](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.43-250)** | Windows only. ULTRA startup keeps the connection status responsive when the server is slow or unreachable; a pending connection can be canceled promptly. |
+| **[249 — application, CLI and router updates](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.43-249)** | All direct downloads and apt/dnf packages from one revision. See the release notes for platform-specific validation and store submission status. |
 | **[247 — Windows: uninstall without an error box](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.43-247)** | Windows only. Removing the app no longer stops at "The specified service does not exist as an installed service"; a silent uninstall no longer waits forever. The release was checked end to end on a clean Windows 11 machine: all five protocols connect, split tunneling and DNS inside the tunnel work. |
 | **[246 — Windows: an honest button during outages, DNS only through the VPN](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.43-246)** | Windows only. While the connection to the server is being restored the button shows "Connecting…" instead of "connected". Name lookups go only through the tunnel, also while it reconnects, so the provider's resolver is never asked and split rules by domain keep working. |
 | **[245 — Windows: split "direct" works, a dropped tunnel comes back](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.43-245)** | Windows only, on top of 244. Split tunneling "direct" connections are bound to the real network instead of looping into the tunnel. A tunnel whose connections to the server dropped shows "connecting" and reconnects by itself with all traffic kept inside the VPN. The profile renewed in the background is applied, so a session outlives a day. |
@@ -60,7 +67,7 @@ Earlier releases:
 | **[173 — Edit presets and keep your location](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-173)** | Edit preset names, networks and domains without rebuilding routes. Saving routing settings reconnects an affected active VPN and preserves the selected location. Updated macOS TestFlight packaging and shared data access for VPN extensions. |
 | **[172 — Location Split tunneling](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-172)** | One entry VPN, country and region presets, custom networks and domains, VPN/Direct destinations and an OTHERS fallback. ULTRA tunnels between your servers. Improved Devices spacing and Linux GUI runtime dependencies. |
 
-**Release channels:** the Windows graphical app is **1.2.43 (250)**; other direct downloads and apt/dnf remain **1.2.43 (249)**. TestFlight and public stores have independent availability. See [release 249](releases/1.2.43-249.md) for the scope, verification results and remaining device-testing limits. Historical releases remain available.
+**Release channels:** Android APK, Windows, Linux (direct and apt/dnf), routers and OpenWrt are **1.2.44 (256)**; the macOS DMG and macOS CLI follow separately from Apple hardware. TestFlight and public stores have independent availability. See [release 256](releases/1.2.44-256.md) for the scope, verification results and limits. Historical releases remain available.
 
 ## Split tunneling, per location
 
@@ -182,7 +189,7 @@ ULTRA's graphical client integration is available on **iOS, Android, macOS and, 
 
 ### Install from our apt / dnf repository (recommended)
 
-**Repository snapshot checked 25 September 2026: 1.2.43-249.** The GUI is available for x86-64; the CLI and service are available for x86-64 and ARM64. Both apt/dnf repositories and [direct packages](#downloads) are current.
+**Repository snapshot checked 27 September 2026: 1.2.44-256.** The GUI is available for x86-64; the CLI and service are available for x86-64 and ARM64. Both apt/dnf repositories and [direct packages](#downloads) are current.
 
 The apt/dnf repositories resolve dependencies and integrate with system updates. Repository metadata is signed; RPM packages are also signed individually. Install the signing key before adding a repository.
 
@@ -270,19 +277,19 @@ Everything below is also on **[meduzavpn.com](https://meduzavpn.com)**.
 | Android public store | 1.2.43 (249) submitted for production review | [Google Play](https://play.google.com/store/apps/details?id=app.meduzavpn) |
 | Apple TV | Existing store/TestFlight release; 249 prepared but not uploaded here | TestFlight / App Store |
 | macOS direct installer | 1.2.43 (249) | [Signed, notarized DMG](https://meduzavpn.com/download/macos) |
-| Android direct installer | 1.2.43 (249); also Android TV and Fire TV | [Release-signed APK](https://meduzavpn.com/download/android) |
-| Windows graphical app | 1.2.43 (250) | [Windows installer](https://meduzavpn.com/download/windows) |
-| Linux graphical app | 1.2.43-249, x86-64 | [DEB](https://meduzavpn.com/download/linux-desktop-deb) · [RPM](https://meduzavpn.com/download/linux-desktop-rpm) |
+| Android direct installer | 1.2.44 (256); also Android TV and Fire TV | [Release-signed APK](https://meduzavpn.com/download/android) |
+| Windows graphical app | 1.2.44 (256) | [Windows installer](https://meduzavpn.com/download/windows) |
+| Linux graphical app | 1.2.44-256, x86-64 | [DEB](https://meduzavpn.com/download/linux-desktop-deb) · [RPM](https://meduzavpn.com/download/linux-desktop-rpm) |
 
 ### Command line and Linux service
 
 | Platform | Current release | Download |
 |---|---|---|
-| Linux CLI + daemon | 1.2.43-249 | [DEB](https://meduzavpn.com/download/linux-deb) · [RPM](https://meduzavpn.com/download/linux-rpm) · [tar.gz](https://meduzavpn.com/download/linux-tar) |
+| Linux CLI + daemon | 1.2.44-256 | [DEB](https://meduzavpn.com/download/linux-deb) · [RPM](https://meduzavpn.com/download/linux-rpm) · [tar.gz](https://meduzavpn.com/download/linux-tar) |
 | macOS CLI | 1.2.43-249 | [Universal archive](https://meduzavpn.com/download/cli-macos) |
-| Windows CLI | 1.2.43-249 | [Windows archive](https://meduzavpn.com/download/cli-windows) |
+| Windows CLI | 1.2.44-256 | [Windows archive](https://meduzavpn.com/download/cli-windows) |
 
-Versioned files and signed SHA-256 checksums are listed in the [release manifest](https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/1.2.43-250/release.json). Downloads are hosted in DigitalOcean Spaces. Website download links stay stable between releases.
+Versioned files and signed SHA-256 checksums are listed in the [release manifest](https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/1.2.44-256/release.json). Downloads are hosted in DigitalOcean Spaces. Website download links stay stable between releases.
 
 > [!IMPORTANT]
 > The Linux graphical `meduzavpn-desktop` package is standalone and includes its daemon. Install it on a desktop, or choose `meduzavpn` for a headless CLI/service installation.
@@ -314,12 +321,12 @@ interface on in the app's settings first.
 
 ## Verifying what you downloaded
 
-The [release manifest](https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/1.2.43-250/release.json) records each installer, CLI and router package with its source revision, size and SHA-256 digest. Verify the signed checksum file before checking a download:
+The [release manifest](https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/1.2.44-256/release.json) records each installer, CLI and router package with its source revision, size and SHA-256 digest. Verify the signed checksum file before checking a download:
 
 ```bash
 curl -fsSL https://meduzavpn-builds.fra1.digitaloceanspaces.com/repo/meduzavpn-archive-keyring.asc | gpg --import
-curl -fsSLO https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/1.2.43-250/SHA256SUMS
-curl -fsSLO https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/1.2.43-250/SHA256SUMS.asc
+curl -fsSLO https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/1.2.44-256/SHA256SUMS
+curl -fsSLO https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/1.2.44-256/SHA256SUMS.asc
 gpg --verify SHA256SUMS.asc SHA256SUMS
 sha256sum -c SHA256SUMS --ignore-missing
 ```
