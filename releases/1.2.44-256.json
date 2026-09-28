@@ -3,7 +3,7 @@
   "source_repository": "AdelBekov/meduza-app",
   "source_branch": "main",
   "source_sha": "002669d40afef7efaac365bd72d1e125cd0ca340",
-  "checked_at": "2026-09-28T04:40:37.079940+00:00",
+  "checked_at": "2026-09-28T04:57:25.187633+00:00",
   "files": [
     {
       "key": "MeduzaVPN.apk",
@@ -106,12 +106,12 @@
     },
     {
       "key": "meduzavpn-macos-universal.tar.gz",
-      "version": "1.2.43+249",
-      "source_sha": "84882e393cf139c0240f21e2051bff9ab19c83c7",
-      "bytes": 5529720,
-      "sha256": "2120d8f84d7460ea090e8ce15b4e564963a7887e0533c43b11771528afaa9eb8",
+      "version": "1.2.44+256",
+      "source_sha": "002669d40afef7efaac365bd72d1e125cd0ca340",
+      "bytes": 5529627,
+      "sha256": "d237a03d639b59a1119804ef87cc4749b77eef31f9667c94d2f6042cf1def79a",
       "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/latest/meduzavpn-macos-universal.tar.gz",
-      "versioned_url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/cli-macos/meduzavpn-1.2.43-249-macos-universal.tar.gz"
+      "versioned_url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/cli-macos/meduzavpn-1.2.44-256-macos-universal.tar.gz"
     },
     {
       "key": "meduzavpn-windows.zip",
@@ -213,6 +213,7 @@
         "meduzavpn-desktop_x86_64.rpm",
         "meduzavpn-linux-amd64.tar.gz",
         "meduzavpn-linux-arm64.tar.gz",
+        "meduzavpn-macos-universal.tar.gz",
         "meduzavpn-windows.zip",
         "meduzavpn_aarch64.rpm",
         "meduzavpn_amd64.deb",

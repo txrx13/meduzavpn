@@ -25,7 +25,7 @@
 
 ## Current release: [MeduzaVPN 1.2.44 (256)](releases/1.2.44-256.md)
 
-**Build 256 for Android (website APK), Windows (installer and CLI), macOS (DMG), Linux (packages, archives, apt/dnf) and routers/OpenWrt**, all from one published application revision. The macOS CLI stays on 249. Store channels are unchanged by this publication.
+**Build 256 for Android (website APK), Windows (installer and CLI), macOS (DMG and CLI), Linux (packages, archives, apt/dnf) and routers/OpenWrt**, all from one published application revision. Store channels are unchanged by this publication.
 
 ### What changed
 
@@ -67,7 +67,7 @@ Earlier releases:
 | **[173 — Edit presets and keep your location](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-173)** | Edit preset names, networks and domains without rebuilding routes. Saving routing settings reconnects an affected active VPN and preserves the selected location. Updated macOS TestFlight packaging and shared data access for VPN extensions. |
 | **[172 — Location Split tunneling](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-172)** | One entry VPN, country and region presets, custom networks and domains, VPN/Direct destinations and an OTHERS fallback. ULTRA tunnels between your servers. Improved Devices spacing and Linux GUI runtime dependencies. |
 
-**Release channels:** Android APK, Windows, the macOS DMG, Linux (direct and apt/dnf), routers and OpenWrt are **1.2.44 (256)**; the macOS CLI remains **1.2.43 (249)**. TestFlight and public stores have independent availability. See [release 256](releases/1.2.44-256.md) for the scope, verification results and limits. Historical releases remain available.
+**Release channels:** every direct download — Android APK, Windows, macOS DMG and CLI, Linux (direct and apt/dnf), routers and OpenWrt — is **1.2.44 (256)**. TestFlight and public stores have independent availability. See [release 256](releases/1.2.44-256.md) for the scope, verification results and limits. Historical releases remain available.
 
 ## Split tunneling, per location
 
@@ -286,7 +286,7 @@ Everything below is also on **[meduzavpn.com](https://meduzavpn.com)**.
 | Platform | Current release | Download |
 |---|---|---|
 | Linux CLI + daemon | 1.2.44-256 | [DEB](https://meduzavpn.com/download/linux-deb) · [RPM](https://meduzavpn.com/download/linux-rpm) · [tar.gz](https://meduzavpn.com/download/linux-tar) |
-| macOS CLI | 1.2.43-249 | [Universal archive](https://meduzavpn.com/download/cli-macos) |
+| macOS CLI | 1.2.44-256 | [Universal archive](https://meduzavpn.com/download/cli-macos) |
 | Windows CLI | 1.2.44-256 | [Windows archive](https://meduzavpn.com/download/cli-windows) |
 
 Versioned files and signed SHA-256 checksums are listed in the [release manifest](https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/1.2.44-256/release.json). Downloads are hosted in DigitalOcean Spaces. Website download links stay stable between releases.
