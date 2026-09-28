@@ -25,7 +25,7 @@
 
 ## Current release: [MeduzaVPN 1.2.44 (256)](releases/1.2.44-256.md)
 
-**Build 256 for Android (website APK), Windows (installer and CLI), Linux (packages, archives, apt/dnf) and routers/OpenWrt**, all from one published application revision. The macOS DMG and macOS CLI are published separately from Apple hardware. Store channels are unchanged by this publication.
+**Build 256 for Android (website APK), Windows (installer and CLI), macOS (DMG), Linux (packages, archives, apt/dnf) and routers/OpenWrt**, all from one published application revision. The macOS CLI stays on 249. Store channels are unchanged by this publication.
 
 ### What changed
 
@@ -39,7 +39,7 @@
 - **Connect On Demand** starts the tunnel on the VPN you picked rather than a previously stored one.
 - **Notifications** permission is asked again at a moment of value, with the app's own explanation first.
 
-[Windows download](https://meduzavpn.com/download/windows) · [Android APK](https://meduzavpn.com/download/android) · [All downloads](#downloads) · [Release notes, source revision and checksums](releases/1.2.44-256.md)
+[Windows download](https://meduzavpn.com/download/windows) · [Android APK](https://meduzavpn.com/download/android) · [macOS DMG](https://meduzavpn.com/download/macos) · [All downloads](#downloads) · [Release notes, source revision and checksums](releases/1.2.44-256.md)
 
 Earlier releases:
 
@@ -67,7 +67,7 @@ Earlier releases:
 | **[173 — Edit presets and keep your location](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-173)** | Edit preset names, networks and domains without rebuilding routes. Saving routing settings reconnects an affected active VPN and preserves the selected location. Updated macOS TestFlight packaging and shared data access for VPN extensions. |
 | **[172 — Location Split tunneling](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-172)** | One entry VPN, country and region presets, custom networks and domains, VPN/Direct destinations and an OTHERS fallback. ULTRA tunnels between your servers. Improved Devices spacing and Linux GUI runtime dependencies. |
 
-**Release channels:** Android APK, Windows, Linux (direct and apt/dnf), routers and OpenWrt are **1.2.44 (256)**; the macOS DMG and macOS CLI follow separately from Apple hardware. TestFlight and public stores have independent availability. See [release 256](releases/1.2.44-256.md) for the scope, verification results and limits. Historical releases remain available.
+**Release channels:** Android APK, Windows, the macOS DMG, Linux (direct and apt/dnf), routers and OpenWrt are **1.2.44 (256)**; the macOS CLI remains **1.2.43 (249)**. TestFlight and public stores have independent availability. See [release 256](releases/1.2.44-256.md) for the scope, verification results and limits. Historical releases remain available.
 
 ## Split tunneling, per location
 
@@ -276,7 +276,7 @@ Everything below is also on **[meduzavpn.com](https://meduzavpn.com)**.
 | macOS beta | 1.2.43 (249), available for internal testing | TestFlight; existing internal tester groups |
 | Android public store | 1.2.43 (249) submitted for production review | [Google Play](https://play.google.com/store/apps/details?id=app.meduzavpn) |
 | Apple TV | Existing store/TestFlight release; 249 prepared but not uploaded here | TestFlight / App Store |
-| macOS direct installer | 1.2.43 (249) | [Signed, notarized DMG](https://meduzavpn.com/download/macos) |
+| macOS direct installer | 1.2.44 (256) | [Signed, notarized DMG](https://meduzavpn.com/download/macos) |
 | Android direct installer | 1.2.44 (256); also Android TV and Fire TV | [Release-signed APK](https://meduzavpn.com/download/android) |
 | Windows graphical app | 1.2.44 (256) | [Windows installer](https://meduzavpn.com/download/windows) |
 | Linux graphical app | 1.2.44-256, x86-64 | [DEB](https://meduzavpn.com/download/linux-desktop-deb) · [RPM](https://meduzavpn.com/download/linux-desktop-rpm) |

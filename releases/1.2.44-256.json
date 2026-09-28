@@ -3,7 +3,7 @@
   "source_repository": "AdelBekov/meduza-app",
   "source_branch": "main",
   "source_sha": "002669d40afef7efaac365bd72d1e125cd0ca340",
-  "checked_at": "2026-09-27T23:20:14.463962+00:00",
+  "checked_at": "2026-09-28T04:40:37.079940+00:00",
   "files": [
     {
       "key": "MeduzaVPN.apk",
@@ -25,12 +25,12 @@
     },
     {
       "key": "MeduzaVPN.dmg",
-      "version": "1.2.43+249",
-      "source_sha": "84882e393cf139c0240f21e2051bff9ab19c83c7",
-      "bytes": 82955581,
-      "sha256": "a33d1e9f9e5ea2d12e94c082965be56cfd62da5acdc32024ca00aa156ebc8253",
+      "version": "1.2.44+256",
+      "source_sha": "002669d40afef7efaac365bd72d1e125cd0ca340",
+      "bytes": 83830602,
+      "sha256": "da9d4adaa717be1dbb836033a9444c62e13d010a50d647b386c456cbb3c66591",
       "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/latest/MeduzaVPN.dmg",
-      "versioned_url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/macos/MeduzaVPN-1.2.43-249.dmg"
+      "versioned_url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/macos/MeduzaVPN-1.2.44-256.dmg"
     },
     {
       "key": "meduzavpn-linux-amd64.tar.gz",
@@ -208,6 +208,7 @@
       "keys": [
         "MeduzaVPN-Setup.exe",
         "MeduzaVPN.apk",
+        "MeduzaVPN.dmg",
         "meduzavpn-desktop_amd64.deb",
         "meduzavpn-desktop_x86_64.rpm",
         "meduzavpn-linux-amd64.tar.gz",
