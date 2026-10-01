@@ -1,0 +1,236 @@
+{
+  "version": "1.2.46+265",
+  "source_repository": "MeduzaVPN",
+  "source_branch": "main",
+  "source_sha": "958f84f59155d06c66a453ab0277bed92e0914dd",
+  "checked_at": "2026-10-01T04:50:48.446718+00:00",
+  "files": [
+    {
+      "key": "MeduzaVPN.apk",
+      "version": "1.2.46+265",
+      "source_sha": "958f84f59155d06c66a453ab0277bed92e0914dd",
+      "bytes": 145356881,
+      "sha256": "6807eb5e5e1f2790a789df660429e6d73a9899a45888e566506e63b79112512d",
+      "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/latest/MeduzaVPN.apk",
+      "versioned_url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/android/MeduzaVPN-1.2.46-265.apk"
+    },
+    {
+      "key": "MeduzaVPN-Setup.exe",
+      "version": "1.2.46+265",
+      "source_sha": "958f84f59155d06c66a453ab0277bed92e0914dd",
+      "bytes": 48000416,
+      "sha256": "b19c133c870bedcb0889f7471d0c1fb0a97c502b927ecc93277c04e3a1c8a532",
+      "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/latest/MeduzaVPN-Setup.exe",
+      "versioned_url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/windows/MeduzaVPN-Setup-1.2.46-265.exe"
+    },
+    {
+      "key": "MeduzaVPN.dmg",
+      "version": "1.2.46+265",
+      "source_sha": "958f84f59155d06c66a453ab0277bed92e0914dd",
+      "bytes": 84887305,
+      "sha256": "098afd6a033829d093005b16b4fedcd7e0ebe910d58b7ed3777d22704cd052bd",
+      "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/latest/MeduzaVPN.dmg",
+      "versioned_url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/macos/MeduzaVPN-1.2.46-265.dmg"
+    },
+    {
+      "key": "meduzavpn-linux-amd64.tar.gz",
+      "version": "1.2.46+265",
+      "source_sha": "958f84f59155d06c66a453ab0277bed92e0914dd",
+      "bytes": 17619155,
+      "sha256": "09ca38465e7fa46113fec6badb956d45dc096a50fcc82875bd2f6a2d04daa642",
+      "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/latest/meduzavpn-linux-amd64.tar.gz",
+      "versioned_url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/linux/meduzavpn-1.2.46-265-linux-amd64.tar.gz"
+    },
+    {
+      "key": "meduzavpn-linux-arm64.tar.gz",
+      "version": "1.2.46+265",
+      "source_sha": "958f84f59155d06c66a453ab0277bed92e0914dd",
+      "bytes": 15992960,
+      "sha256": "df44456f7401f38d2e93fc31d22a76be94aff5464d17b7b2924d7c425606d8a7",
+      "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/latest/meduzavpn-linux-arm64.tar.gz",
+      "versioned_url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/linux/meduzavpn-1.2.46-265-linux-arm64.tar.gz"
+    },
+    {
+      "key": "meduzavpn_aarch64.rpm",
+      "version": "1.2.46+265",
+      "source_sha": "958f84f59155d06c66a453ab0277bed92e0914dd",
+      "bytes": 16950143,
+      "sha256": "ac7136f241637a295804c77695aed4fc69205d253595d774f5a99c07c920442f",
+      "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/latest/meduzavpn_aarch64.rpm",
+      "versioned_url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/linux/meduzavpn-1.2.46-265.aarch64.rpm"
+    },
+    {
+      "key": "meduzavpn_x86_64.rpm",
+      "version": "1.2.46+265",
+      "source_sha": "958f84f59155d06c66a453ab0277bed92e0914dd",
+      "bytes": 18614871,
+      "sha256": "0c7164fe78e87ff35f07365acae8eb4e9000ca6eac60131e5dccb0f025f85dff",
+      "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/latest/meduzavpn_x86_64.rpm",
+      "versioned_url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/linux/meduzavpn-1.2.46-265.x86_64.rpm"
+    },
+    {
+      "key": "meduzavpn-desktop_x86_64.rpm",
+      "version": "1.2.46+265",
+      "source_sha": "958f84f59155d06c66a453ab0277bed92e0914dd",
+      "bytes": 47836966,
+      "sha256": "cd9690c1e95cb5dd697494323ac156b34b2791d8845426c230a2c48803ec22ea",
+      "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/latest/meduzavpn-desktop_x86_64.rpm",
+      "versioned_url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/linux/meduzavpn-desktop-1.2.46-265.x86_64.rpm"
+    },
+    {
+      "key": "meduzavpn-desktop_amd64.deb",
+      "version": "1.2.46+265",
+      "source_sha": "958f84f59155d06c66a453ab0277bed92e0914dd",
+      "bytes": 46133186,
+      "sha256": "3810ba2f2a69ded0e309b36fc1b15da2bf0cc108d0aa8dc71240a493c9748ee9",
+      "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/latest/meduzavpn-desktop_amd64.deb",
+      "versioned_url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/linux/meduzavpn-desktop_1.2.46-265_amd64.deb"
+    },
+    {
+      "key": "meduzavpn_amd64.deb",
+      "version": "1.2.46+265",
+      "source_sha": "958f84f59155d06c66a453ab0277bed92e0914dd",
+      "bytes": 17872416,
+      "sha256": "6e2adf5812467a08a1617da439c44d096f8a667eae7b414b219dbe0f80530308",
+      "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/latest/meduzavpn_amd64.deb",
+      "versioned_url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/linux/meduzavpn_1.2.46-265_amd64.deb"
+    },
+    {
+      "key": "meduzavpn_arm64.deb",
+      "version": "1.2.46+265",
+      "source_sha": "958f84f59155d06c66a453ab0277bed92e0914dd",
+      "bytes": 16358848,
+      "sha256": "66fcece788326f681d6971ffc3e2c6a9041cc53e199ad31cfd473b09981065b0",
+      "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/latest/meduzavpn_arm64.deb",
+      "versioned_url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/linux/meduzavpn_1.2.46-265_arm64.deb"
+    },
+    {
+      "key": "meduzavpn-macos-universal.tar.gz",
+      "version": "1.2.46+265",
+      "source_sha": "958f84f59155d06c66a453ab0277bed92e0914dd",
+      "bytes": 5530301,
+      "sha256": "521d015f902dccefd08b6194eaab5c4658979be9c1ff61b7e2ff54f36696f402",
+      "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/latest/meduzavpn-macos-universal.tar.gz",
+      "versioned_url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/cli-macos/meduzavpn-1.2.46-265-macos-universal.tar.gz"
+    },
+    {
+      "key": "meduzavpn-windows.zip",
+      "version": "1.2.46+265",
+      "source_sha": "958f84f59155d06c66a453ab0277bed92e0914dd",
+      "bytes": 2926523,
+      "sha256": "95a5db9f48966296cbbcbc26fdb9e85b034751756c100ec6cfb86a695106531b",
+      "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/latest/meduzavpn-windows.zip",
+      "versioned_url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/1.2.46-265/meduzavpn-windows.zip"
+    },
+    {
+      "key": "routers/meduzavpn-router-mips.tar.gz",
+      "version": "1.2.46+265",
+      "source_sha": "958f84f59155d06c66a453ab0277bed92e0914dd",
+      "bytes": 19481794,
+      "sha256": "488e0be04b0844a472e3f5e5b687d6c548197b7b4822524084f96a927e2a1939",
+      "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/latest/routers/meduzavpn-router-mips.tar.gz",
+      "versioned_url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/1.2.46-265/routers/meduzavpn-router-mips.tar.gz"
+    },
+    {
+      "key": "routers/meduzavpn-router-mipsle.tar.gz",
+      "version": "1.2.46+265",
+      "source_sha": "958f84f59155d06c66a453ab0277bed92e0914dd",
+      "bytes": 19127796,
+      "sha256": "1fe79a9222cfd60bf26a271fd7e232e1beae9b47b09252e772b34c4f253c3bd7",
+      "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/latest/routers/meduzavpn-router-mipsle.tar.gz",
+      "versioned_url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/1.2.46-265/routers/meduzavpn-router-mipsle.tar.gz"
+    },
+    {
+      "key": "routers/meduzavpn-router-arm.tar.gz",
+      "version": "1.2.46+265",
+      "source_sha": "958f84f59155d06c66a453ab0277bed92e0914dd",
+      "bytes": 20016590,
+      "sha256": "dcdc77ba991b8cd86fb66de98cb390160ac526779040c52dc48fa2f6acf16a8f",
+      "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/latest/routers/meduzavpn-router-arm.tar.gz",
+      "versioned_url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/1.2.46-265/routers/meduzavpn-router-arm.tar.gz"
+    },
+    {
+      "key": "routers/meduzavpn-router-arm64.tar.gz",
+      "version": "1.2.46+265",
+      "source_sha": "958f84f59155d06c66a453ab0277bed92e0914dd",
+      "bytes": 19231559,
+      "sha256": "26b568171d30dd6c54d0e3d74d1ad818a666543f035908a36fce2d37c4ea73d9",
+      "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/latest/routers/meduzavpn-router-arm64.tar.gz",
+      "versioned_url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/1.2.46-265/routers/meduzavpn-router-arm64.tar.gz"
+    },
+    {
+      "key": "openwrt/meduzavpn-x86-64.ipk",
+      "version": "1.2.46+265",
+      "source_sha": "958f84f59155d06c66a453ab0277bed92e0914dd",
+      "bytes": 16640578,
+      "sha256": "0495f8da85d3f03b9afcc48213576c8cbb74c2f8ddb17baa4b7cef6862d99571",
+      "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/latest/openwrt/meduzavpn-x86-64.ipk",
+      "versioned_url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/1.2.46-265/openwrt/meduzavpn-x86-64.ipk"
+    },
+    {
+      "key": "openwrt/meduzavpn-mediatek-filogic.ipk",
+      "version": "1.2.46+265",
+      "source_sha": "958f84f59155d06c66a453ab0277bed92e0914dd",
+      "bytes": 15014822,
+      "sha256": "15d239be8fa73d6c350e1ccce5a96e7f7c794d62f4fbf801472f986f3a543416",
+      "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/latest/openwrt/meduzavpn-mediatek-filogic.ipk",
+      "versioned_url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/1.2.46-265/openwrt/meduzavpn-mediatek-filogic.ipk"
+    },
+    {
+      "key": "openwrt/meduzavpn-ramips-mt7621.ipk",
+      "version": "1.2.46+265",
+      "source_sha": "958f84f59155d06c66a453ab0277bed92e0914dd",
+      "bytes": 14900703,
+      "sha256": "7633831e81ca289a8c9448541e0576666eb632e0ae33d264866d51dd9e0ea2c6",
+      "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/latest/openwrt/meduzavpn-ramips-mt7621.ipk",
+      "versioned_url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/1.2.46-265/openwrt/meduzavpn-ramips-mt7621.ipk"
+    },
+    {
+      "key": "openwrt/luci-app-meduzavpn.ipk",
+      "version": "1.2.46+265",
+      "source_sha": "958f84f59155d06c66a453ab0277bed92e0914dd",
+      "bytes": 18171,
+      "sha256": "a55c4fd2922459830026718a28fa36d06ada8a23fca641b6e4fbc4121b992601",
+      "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/latest/openwrt/luci-app-meduzavpn.ipk",
+      "versioned_url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/1.2.46-265/openwrt/luci-app-meduzavpn.ipk"
+    }
+  ],
+  "scope": "all-direct-downloads",
+  "stores": {
+    "ios": "1.2.46 (265): TestFlight; App Store WAITING_FOR_REVIEW",
+    "macos": "1.2.46 (265): TestFlight; Mac App Store 1.2.43 (249) in review",
+    "tvos": "Unchanged",
+    "google_play": "1.2.46 (265): production edit committed and sent for review"
+  },
+  "channel_notes": "Build 265 (1.2.46) from MeduzaVPN main 958f84f5 for Android APK, Windows installer, Windows CLI, Linux packages/tarballs, routers and OpenWrt. macOS DMG and macOS CLI are built, signed and notarized separately on Apple hardware from the same revision.",
+  "updates": [
+    {
+      "keys": [
+        "MeduzaVPN-Setup.exe",
+        "MeduzaVPN.apk",
+        "MeduzaVPN.dmg",
+        "meduzavpn-desktop_amd64.deb",
+        "meduzavpn-desktop_x86_64.rpm",
+        "meduzavpn-linux-amd64.tar.gz",
+        "meduzavpn-linux-arm64.tar.gz",
+        "meduzavpn-macos-universal.tar.gz",
+        "meduzavpn-windows.zip",
+        "meduzavpn_aarch64.rpm",
+        "meduzavpn_amd64.deb",
+        "meduzavpn_arm64.deb",
+        "meduzavpn_x86_64.rpm",
+        "openwrt/luci-app-meduzavpn.ipk",
+        "openwrt/meduzavpn-mediatek-filogic.ipk",
+        "openwrt/meduzavpn-ramips-mt7621.ipk",
+        "openwrt/meduzavpn-x86-64.ipk",
+        "routers/meduzavpn-router-arm.tar.gz",
+        "routers/meduzavpn-router-arm64.tar.gz",
+        "routers/meduzavpn-router-mips.tar.gz",
+        "routers/meduzavpn-router-mipsle.tar.gz"
+      ],
+      "version": "1.2.46+265",
+      "source_sha": "958f84f59155d06c66a453ab0277bed92e0914dd",
+      "note": "Release 1.2.46 (265)"
+    }
+  ]
+}
