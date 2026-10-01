@@ -1,0 +1,242 @@
+{
+  "schema": 1,
+  "product": "meduza",
+  "verified_at": "2026-10-01T04:50:48.446718+00:00",
+  "known_builds": [
+    {
+      "build": 263,
+      "version": "1.2.45+263",
+      "source_sha": "71e3c354a664c6a46d9ce2eb9c9baf49add97919",
+      "source_repository": "https://github.com/txrx13/meduza-app",
+      "verified_at": "2026-09-28T23:41:11.038017+00:00",
+      "proof_url": "https://github.com/txrx13/meduzavpn/blob/main/releases/1.2.45-263.json",
+      "capabilities": {
+        "client_actions": [
+          "routes_configure",
+          "app_set_protocol",
+          "order_store_purchase",
+          "checkout_all_methods",
+          "screen_support_ticket",
+          "screen_best_location",
+          "screen_location_split",
+          "screen_restore_purchases"
+        ],
+        "screens": [
+          "home",
+          "services",
+          "catalog",
+          "transactions",
+          "account",
+          "support",
+          "split_tunneling",
+          "language",
+          "best_location",
+          "location_split",
+          "restore_purchases"
+        ],
+        "screen_requirements": {
+          "support": "screen_support_ticket",
+          "best_location": "screen_best_location",
+          "location_split": "screen_location_split",
+          "restore_purchases": "screen_restore_purchases"
+        }
+      },
+      "capability_proof_url": "https://github.com/txrx13/meduza-app/blob/71e3c354a664c6a46d9ce2eb9c9baf49add97919/lib/features/mia/mia_models.dart",
+      "capability_evidence_urls": [
+        "https://github.com/txrx13/meduza-app/blob/71e3c354a664c6a46d9ce2eb9c9baf49add97919/lib/features/mia/mia_controller.dart",
+        "https://github.com/txrx13/meduza-app/blob/71e3c354a664c6a46d9ce2eb9c9baf49add97919/lib/features/mia/mia_workspace.dart",
+        "https://github.com/txrx13/meduza-app/blob/71e3c354a664c6a46d9ce2eb9c9baf49add97919/lib/pages/settings/change_location_page.dart",
+        "https://github.com/txrx13/meduza-app/blob/71e3c354a664c6a46d9ce2eb9c9baf49add97919/lib/pages/settings/location_split_page.dart"
+      ]
+    },
+    {
+      "build": 265,
+      "version": "1.2.46+265",
+      "source_sha": "958f84f59155d06c66a453ab0277bed92e0914dd",
+      "source_repository": "https://github.com/txrx13/meduza-app",
+      "verified_at": "2026-10-01T04:50:48.446718+00:00",
+      "proof_url": "https://github.com/txrx13/meduzavpn/blob/main/releases/1.2.46-265.json",
+      "capabilities": {
+        "client_actions": [
+          "routes_configure",
+          "app_set_protocol",
+          "order_store_purchase",
+          "checkout_all_methods",
+          "screen_support_ticket",
+          "screen_best_location",
+          "screen_location_split",
+          "screen_restore_purchases"
+        ],
+        "screens": [
+          "home",
+          "services",
+          "catalog",
+          "transactions",
+          "account",
+          "support",
+          "split_tunneling",
+          "language",
+          "best_location",
+          "location_split",
+          "restore_purchases"
+        ],
+        "screen_requirements": {
+          "support": "screen_support_ticket",
+          "best_location": "screen_best_location",
+          "location_split": "screen_location_split",
+          "restore_purchases": "screen_restore_purchases"
+        }
+      },
+      "capability_proof_url": "https://github.com/txrx13/meduza-app/blob/958f84f59155d06c66a453ab0277bed92e0914dd/lib/features/mia/mia_models.dart",
+      "capability_evidence_urls": [
+        "https://github.com/txrx13/meduza-app/blob/958f84f59155d06c66a453ab0277bed92e0914dd/lib/features/mia/mia_controller.dart",
+        "https://github.com/txrx13/meduza-app/blob/958f84f59155d06c66a453ab0277bed92e0914dd/lib/features/mia/mia_workspace.dart",
+        "https://github.com/txrx13/meduza-app/blob/958f84f59155d06c66a453ab0277bed92e0914dd/lib/pages/settings/change_location_page.dart",
+        "https://github.com/txrx13/meduza-app/blob/958f84f59155d06c66a453ab0277bed92e0914dd/lib/pages/settings/location_split_page.dart"
+      ]
+    }
+  ],
+  "channels": [
+    {
+      "platform": "android",
+      "install_channel": "sideload",
+      "status": "published",
+      "published_build": 265,
+      "published_version": "1.2.46+265",
+      "submitted_build": null,
+      "verified_at": "2026-10-01T04:50:48.446718+00:00",
+      "source_sha": "958f84f59155d06c66a453ab0277bed92e0914dd",
+      "proof_url": "https://github.com/txrx13/meduzavpn/blob/main/releases/1.2.46-265.json",
+      "regions": null,
+      "artifact": {
+        "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/android/MeduzaVPN-1.2.46-265.apk",
+        "sha256": "6807eb5e5e1f2790a789df660429e6d73a9899a45888e566506e63b79112512d",
+        "bytes": 145356881
+      }
+    },
+    {
+      "platform": "macos",
+      "install_channel": "developer_id",
+      "status": "published",
+      "published_build": 265,
+      "published_version": "1.2.46+265",
+      "submitted_build": null,
+      "verified_at": "2026-10-01T04:50:48.446718+00:00",
+      "source_sha": "958f84f59155d06c66a453ab0277bed92e0914dd",
+      "proof_url": "https://github.com/txrx13/meduzavpn/blob/main/releases/1.2.46-265.json",
+      "regions": null,
+      "artifact": {
+        "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/macos/MeduzaVPN-1.2.46-265.dmg",
+        "sha256": "098afd6a033829d093005b16b4fedcd7e0ebe910d58b7ed3777d22704cd052bd",
+        "bytes": 84887305
+      }
+    },
+    {
+      "platform": "windows",
+      "install_channel": "none",
+      "status": "published",
+      "published_build": 265,
+      "published_version": "1.2.46+265",
+      "submitted_build": null,
+      "verified_at": "2026-10-01T04:50:48.446718+00:00",
+      "source_sha": "958f84f59155d06c66a453ab0277bed92e0914dd",
+      "proof_url": "https://github.com/txrx13/meduzavpn/blob/main/releases/1.2.46-265.json",
+      "regions": null,
+      "artifact": {
+        "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/windows/MeduzaVPN-Setup-1.2.46-265.exe",
+        "sha256": "b19c133c870bedcb0889f7471d0c1fb0a97c502b927ecc93277c04e3a1c8a532",
+        "bytes": 48000416
+      }
+    },
+    {
+      "platform": "linux",
+      "install_channel": "none",
+      "status": "published",
+      "published_build": 265,
+      "published_version": "1.2.46+265",
+      "submitted_build": null,
+      "verified_at": "2026-10-01T04:50:48.446718+00:00",
+      "source_sha": "958f84f59155d06c66a453ab0277bed92e0914dd",
+      "proof_url": "https://github.com/txrx13/meduzavpn/blob/main/releases/1.2.46-265.json",
+      "regions": null,
+      "artifact": {
+        "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/linux/meduzavpn-desktop_1.2.46-265_amd64.deb",
+        "sha256": "3810ba2f2a69ded0e309b36fc1b15da2bf0cc108d0aa8dc71240a493c9748ee9",
+        "bytes": 46133186
+      }
+    },
+    {
+      "platform": "ios",
+      "install_channel": "testflight",
+      "status": "testers_only",
+      "published_build": null,
+      "published_version": null,
+      "submitted_build": 265,
+      "verified_at": "2026-10-01T04:50:48.446718+00:00",
+      "source_sha": "958f84f59155d06c66a453ab0277bed92e0914dd",
+      "proof_url": "https://github.com/txrx13/meduzavpn/blob/main/releases/1.2.46-265.md",
+      "regions": null,
+      "artifact": null
+    },
+    {
+      "platform": "macos",
+      "install_channel": "testflight",
+      "status": "testers_only",
+      "published_build": null,
+      "published_version": null,
+      "submitted_build": 265,
+      "verified_at": "2026-10-01T04:50:48.446718+00:00",
+      "source_sha": "958f84f59155d06c66a453ab0277bed92e0914dd",
+      "proof_url": "https://github.com/txrx13/meduzavpn/blob/main/releases/1.2.46-265.md",
+      "regions": null,
+      "artifact": null
+    },
+    {
+      "platform": "ios",
+      "install_channel": "app_store",
+      "status": "review_pending",
+      "published_build": null,
+      "published_version": null,
+      "submitted_build": 265,
+      "verified_at": "2026-10-01T04:50:48.446718+00:00",
+      "source_sha": "958f84f59155d06c66a453ab0277bed92e0914dd",
+      "proof_url": "https://github.com/txrx13/meduzavpn/blob/main/releases/1.2.46-265.md",
+      "regions": null,
+      "artifact": null
+    },
+    {
+      "platform": "android",
+      "install_channel": "play",
+      "status": "review_pending",
+      "published_build": null,
+      "published_version": null,
+      "submitted_build": 265,
+      "verified_at": "2026-10-01T04:50:48.446718+00:00",
+      "source_sha": "958f84f59155d06c66a453ab0277bed92e0914dd",
+      "proof_url": "https://github.com/txrx13/meduzavpn/blob/main/releases/1.2.46-265.md",
+      "regions": null,
+      "artifact": null
+    },
+    {
+      "platform": "macos",
+      "install_channel": "app_store",
+      "status": "unknown",
+      "published_build": null,
+      "published_version": null,
+      "submitted_build": null,
+      "verified_at": "2026-10-01T04:50:48.446718+00:00",
+      "source_sha": null,
+      "proof_url": "https://github.com/txrx13/meduzavpn/blob/main/releases/1.2.46-265.md",
+      "regions": null,
+      "artifact": null
+    }
+  ],
+  "selection_policy": {
+    "client_actions": "current_authenticated_turn_overrides_build_inference",
+    "install_channel": "current_turn_only_never_derive_billing_provider",
+    "missing_build_or_channel": "unknown_do_not_promise_availability",
+    "regions": "null_means_unknown",
+    "published": "only_status_published_and_non_null_published_build",
+    "navigation": "require_declared_capability_for_gated_screen"
+  }
+}
