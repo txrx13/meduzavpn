@@ -1,0 +1,61 @@
+{
+  "version": "1.2.48+267",
+  "source_repository": "txrx13/meduza-app",
+  "source_branch": "main",
+  "source_sha": "1304927a4e99bf3755dbe3b467df7f61ab365aa1",
+  "verified_at": "2026-10-01T15:24:09Z",
+  "scope": "verified-direct-android-windows-macos-dmg-linux-deb",
+  "files": [
+    {
+      "key": "MeduzaVPN-Setup.exe",
+      "version": "1.2.48+267",
+      "source_sha": "1304927a4e99bf3755dbe3b467df7f61ab365aa1",
+      "bytes": 48174760,
+      "sha256": "07301e80187113a98af0e88717d7a950b90b2dbcccf1798ff7cd4fd5bcc0e675",
+      "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/latest/MeduzaVPN-Setup.exe",
+      "versioned_url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/windows/MeduzaVPN-Setup-1.2.48-267.exe"
+    },
+    {
+      "key": "MeduzaVPN.dmg",
+      "version": "1.2.48+267",
+      "source_sha": "1304927a4e99bf3755dbe3b467df7f61ab365aa1",
+      "bytes": 85619683,
+      "sha256": "e2747a77b655be0682689866a296548851035d57dc8a008c28f513b8afa02d51",
+      "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/latest/MeduzaVPN.dmg",
+      "versioned_url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/macos/MeduzaVPN-1.2.48-267.dmg"
+    },
+    {
+      "key": "meduzavpn-desktop_amd64.deb",
+      "version": "1.2.48+267",
+      "source_sha": "1304927a4e99bf3755dbe3b467df7f61ab365aa1",
+      "bytes": 46311932,
+      "sha256": "c494f9d96e78f408b501e87370a02cd66a073fcebc2defcfc5563f6993c1c57c",
+      "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/latest/meduzavpn-desktop_amd64.deb",
+      "versioned_url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/linux/meduzavpn-desktop_1.2.48-267_amd64.deb"
+    },
+    {
+      "key": "MeduzaVPN.apk",
+      "version": "1.2.48+267",
+      "source_sha": "b805734e10ca22c0613f5b07f8294bf27e3a8b41",
+      "bytes": 145182443,
+      "sha256": "ea58789fd4be8368eeb2638228fafed9f41710d51eb453d8ac1432991047f166",
+      "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/latest/MeduzaVPN.apk",
+      "versioned_url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/android/MeduzaVPN-1.2.48+267.apk"
+    }
+  ],
+  "evidence": {
+    "public_manifest_url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/latest/release.json",
+    "public_manifest_sha256": "b86cbc0045d483f85a3c8a2dab5ae11dbc86b50b2b4bb229d2079c469509d020",
+    "public_manifest_signature_fingerprint": "B53E4BF4D6EFA6F0E2B7EF7B484339BB9BE99052",
+    "verification": "Exact versioned downloads verified by SHA256 and byte size; manifest signature verified. Source is the published canonical application revision. This record does not assert a newer main was built.",
+    "rpm": "Versioned RPM did not match the manifest at verification; no new RPM publication is asserted here.",
+    "macos_runtime": "Developer ID DMG signature and stapled notarization verified separately; no inner application or customer device runtime is asserted.",
+    "stores": "macOS TestFlight267 is internal beta; iOS265/Google Play265 review records unchanged; no production store availability is inferred.",
+    "android": {
+      "ci_run": "https://github.com/txrx13/meduza-app/actions/runs/36878941268",
+      "source_sha": "b805734e10ca22c0613f5b07f8294bf27e3a8b41",
+      "signer_certificate_sha256": "95c971b88257ab48944eb372b83fc8250a858103e8a1068c5d50a38b70172f0a",
+      "verification": "Official canonical-main run succeeded; both latest and versioned public APKs match the exact CI release-signed artifact digest. Android has its own source revision; source capability declarations are unchanged relative to the desktop267 record."
+    }
+  }
+}

@@ -13,11 +13,11 @@ The root contains `product: meduza`, `verified_at`, `known_builds`, `channels` a
 
 ## Current published evidence
 
-The existing [263 release manifest](1.2.45-263.json) and [265 release manifest](1.2.46-265.json) establish source and artifact provenance. [265 publication notes](1.2.46-265.md) distinguish direct publication, TestFlight and production store review. Direct Android APK, macOS DMG, Windows installer and Linux graphical package are published265. The same release manifest documents CLI/package/router artifacts.
+The [263](1.2.45-263.json), [265](1.2.46-265.json) and [verified desktop267 record](1.2.48-267.json) identify actual published sources and artifact evidence. Android APK267 is verified from the successful official [canonical-main CI run](https://github.com/txrx13/meduza-app/actions/runs/36878941268), with both latest and versioned download hashes matched to the release-signed file. Its exact source is recorded per channel and differs from the desktop source; capability declarations are unchanged. Windows installer, macOS Developer ID DMG and Linux graphical **DEB** are verified267. Versioned RPM267 did not match the publisher manifest during verification; this record does not assert its availability or repair it.
 
-TestFlight265 is limited to testers on iOS/macOS. iOS App Store265 and Google Play265 are recorded as review pending; no production availability is inferred. macOS App Store publication and regional availability are unknown. Proposed development builds are absent.
+macOS TestFlight267 is restricted to internal testers; iOS TestFlight265 remains a beta record. iOS App Store265 and Google Play265 remain review pending. Production macOS App Store publication and regional availability remain unknown.
 
-Published source263 (`71e3c354a664c6a46d9ce2eb9c9baf49add97919`) and265 (`958f84f59155d06c66a453ab0277bed92e0914dd`) both declare the guarded best-location, location-split and restore-purchases capabilities and contain their corresponding request/navigation handlers. The JSON contains exact source evidence URLs; capability presence does not guarantee account entitlement, available products or network success.
+Known sources263,265 and267 declare the guarded best-location, location-split and restore-purchases capabilities with request/navigation handlers. Exact source evidence URLs are recorded; a capability does not guarantee account entitlement, available products or network success. New confirmation and secure visitor mechanisms under development are not advertised as available.
 
 ## Using the record
 
