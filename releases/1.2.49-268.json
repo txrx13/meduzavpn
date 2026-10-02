@@ -1,0 +1,108 @@
+{
+  "version": "1.2.49+268",
+  "source_repository": "txrx13/meduza-app",
+  "source_branch": "main",
+  "source_sha": "ca6b69699f419d480bc87a9bdd3484a9ac09100f",
+  "verified_at": "2026-10-02T06:20:41.846986+00:00",
+  "scope": "verified-direct-android-windows-linux",
+  "files": [
+    {
+      "key": "MeduzaVPN.apk",
+      "version": "1.2.49+268",
+      "source_sha": "ca6b69699f419d480bc87a9bdd3484a9ac09100f",
+      "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/latest/MeduzaVPN.apk",
+      "versioned_url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/android/MeduzaVPN-1.2.49+268.apk",
+      "sha256": "3e15fe35f8a44a7bf056c6d5259cc1532a47c6ac7c46e99d8f41b53ccc9b2ab4",
+      "bytes": 145233723
+    },
+    {
+      "key": "MeduzaVPN-Setup.exe",
+      "version": "1.2.49+268",
+      "source_sha": "ca6b69699f419d480bc87a9bdd3484a9ac09100f",
+      "bytes": 48193296,
+      "sha256": "fad8c50f3e3feb49a890f3cfe29052c585090a9847cf26ee8d01287f22e15437",
+      "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/latest/MeduzaVPN-Setup.exe",
+      "versioned_url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/windows/MeduzaVPN-Setup-1.2.49-268.exe"
+    },
+    {
+      "key": "meduzavpn-linux-amd64.tar.gz",
+      "version": "1.2.49+268",
+      "source_sha": "ca6b69699f419d480bc87a9bdd3484a9ac09100f",
+      "bytes": 17620497,
+      "sha256": "dd0b506141ad0564ec541ba70be738ebd3afd1f3e0890be38e25e7327e58018d",
+      "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/latest/meduzavpn-linux-amd64.tar.gz",
+      "versioned_url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/cli/meduzavpn-1.2.49-268-linux-amd64.tar.gz"
+    },
+    {
+      "key": "meduzavpn-linux-arm64.tar.gz",
+      "version": "1.2.49+268",
+      "source_sha": "ca6b69699f419d480bc87a9bdd3484a9ac09100f",
+      "bytes": 15994009,
+      "sha256": "5be9f695731482843ba8f48b0aa24d6a1a977aad6f48c4e682b4f94706132113",
+      "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/latest/meduzavpn-linux-arm64.tar.gz",
+      "versioned_url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/cli/meduzavpn-1.2.49-268-linux-arm64.tar.gz"
+    },
+    {
+      "key": "meduzavpn_aarch64.rpm",
+      "version": "1.2.49+268",
+      "source_sha": "ca6b69699f419d480bc87a9bdd3484a9ac09100f",
+      "bytes": 16966171,
+      "sha256": "e4df15cbcd60ad740a183a42db5b69eac6a3b698f87bfda878c317a90e5a0c42",
+      "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/latest/meduzavpn_aarch64.rpm",
+      "versioned_url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/linux/meduzavpn-1.2.49-268.aarch64.rpm"
+    },
+    {
+      "key": "meduzavpn_x86_64.rpm",
+      "version": "1.2.49+268",
+      "source_sha": "ca6b69699f419d480bc87a9bdd3484a9ac09100f",
+      "bytes": 18598353,
+      "sha256": "7bc1f9e448496682cfec6943cb24b596ddbe4cf2c04c195f44575a3f14d4634e",
+      "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/latest/meduzavpn_x86_64.rpm",
+      "versioned_url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/linux/meduzavpn-1.2.49-268.x86_64.rpm"
+    },
+    {
+      "key": "meduzavpn-desktop_x86_64.rpm",
+      "version": "1.2.49+268",
+      "source_sha": "ca6b69699f419d480bc87a9bdd3484a9ac09100f",
+      "bytes": 48069607,
+      "sha256": "2636d722eacce7efd951d845733424c4917a1000ec5cb5e4dde57162dc36c3b6",
+      "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/latest/meduzavpn-desktop_x86_64.rpm",
+      "versioned_url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/linux/meduzavpn-desktop-1.2.49-268.x86_64.rpm"
+    },
+    {
+      "key": "meduzavpn-desktop_amd64.deb",
+      "version": "1.2.49+268",
+      "source_sha": "ca6b69699f419d480bc87a9bdd3484a9ac09100f",
+      "bytes": 46331342,
+      "sha256": "6fc308ccab17a825a3467227b044a4e3282c963c13ea787feb44cff8381fad83",
+      "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/latest/meduzavpn-desktop_amd64.deb",
+      "versioned_url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/linux/meduzavpn-desktop_1.2.49-268_amd64.deb"
+    },
+    {
+      "key": "meduzavpn_amd64.deb",
+      "version": "1.2.49+268",
+      "source_sha": "ca6b69699f419d480bc87a9bdd3484a9ac09100f",
+      "bytes": 17873282,
+      "sha256": "c8ded3e32378ef87649c15be295be65473b7e6db2b61454a5c61172703335301",
+      "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/latest/meduzavpn_amd64.deb",
+      "versioned_url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/linux/meduzavpn_1.2.49-268_amd64.deb"
+    },
+    {
+      "key": "meduzavpn_arm64.deb",
+      "version": "1.2.49+268",
+      "source_sha": "ca6b69699f419d480bc87a9bdd3484a9ac09100f",
+      "bytes": 16359728,
+      "sha256": "05b3a669727398b59fe512cf547e0ff3a746f49a2f920a9ea84e8434468ed110",
+      "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/latest/meduzavpn_arm64.deb",
+      "versioned_url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/linux/meduzavpn_1.2.49-268_arm64.deb"
+    }
+  ],
+  "evidence": {
+    "android_ci": "https://github.com/txrx13/meduza-app/actions/runs/36932294219",
+    "android_signer_certificate_sha256": "95c971b88257ab48944eb372b83fc8250a858103e8a1068c5d50a38b70172f0a",
+    "verification": "Versioned and latest public files independently streamed and matched by SHA256 and byte size. Windows own executable/native/installer signatures are Valid with the approved IPFB LLC subject, durable Microsoft signing profile and timestamps. Linux package and repository signatures were verified on the production host. Android package version and release signature were independently verified with the existing SDK tools. Signed release metadata was published from current canonical main with per-write source fences and readback verification.",
+    "public_manifest_url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/latest/release.json",
+    "public_manifest_signature_fingerprint": "B53E4BF4D6EFA6F0E2B7EF7B484339BB9BE99052",
+    "apple": "This record does not assert a new macOS/iOS build or store publication. Existing Apple/store records are preserved."
+  }
+}

@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "product": "meduza",
-  "verified_at": "2026-10-01T15:24:09Z",
+  "verified_at": "2026-10-02T06:20:41.846986+00:00",
   "known_builds": [
     {
       "build": 263,
@@ -140,6 +140,54 @@
         "https://github.com/txrx13/meduza-app/blob/1304927a4e99bf3755dbe3b467df7f61ab365aa1/lib/pages/settings/change_location_page.dart",
         "https://github.com/txrx13/meduza-app/blob/1304927a4e99bf3755dbe3b467df7f61ab365aa1/lib/pages/settings/location_split_page.dart"
       ]
+    },
+    {
+      "build": 268,
+      "version": "1.2.49+268",
+      "source_sha": "ca6b69699f419d480bc87a9bdd3484a9ac09100f",
+      "source_repository": "https://github.com/txrx13/meduza-app",
+      "verified_at": "2026-10-02T06:20:41.846986+00:00",
+      "proof_url": "https://github.com/txrx13/meduzavpn/blob/main/releases/1.2.49-268.json",
+      "capabilities": {
+        "client_actions": [
+          "routes_configure",
+          "app_set_protocol",
+          "order_store_purchase",
+          "checkout_all_methods",
+          "screen_support_ticket",
+          "screen_best_location",
+          "screen_location_split",
+          "screen_restore_purchases"
+        ],
+        "screens": [
+          "home",
+          "services",
+          "catalog",
+          "transactions",
+          "account",
+          "support",
+          "split_tunneling",
+          "language",
+          "best_location",
+          "location_split",
+          "restore_purchases"
+        ],
+        "screen_requirements": {
+          "support": "screen_support_ticket",
+          "best_location": "screen_best_location",
+          "location_split": "screen_location_split",
+          "restore_purchases": "screen_restore_purchases"
+        }
+      },
+      "capability_proof_url": "https://github.com/txrx13/meduza-app/blob/ca6b69699f419d480bc87a9bdd3484a9ac09100f/lib/features/mia/mia_models.dart",
+      "capability_evidence_urls": [
+        "https://github.com/txrx13/meduza-app/blob/ca6b69699f419d480bc87a9bdd3484a9ac09100f/lib/features/mia/mia_controller.dart",
+        "https://github.com/txrx13/meduza-app/blob/ca6b69699f419d480bc87a9bdd3484a9ac09100f/lib/features/mia/mia_workspace.dart",
+        "https://github.com/txrx13/meduza-app/blob/ca6b69699f419d480bc87a9bdd3484a9ac09100f/lib/pages/settings/change_location_page.dart",
+        "https://github.com/txrx13/meduza-app/blob/ca6b69699f419d480bc87a9bdd3484a9ac09100f/lib/pages/settings/location_split_page.dart",
+        "https://github.com/txrx13/meduza-app/blob/ca6b69699f419d480bc87a9bdd3484a9ac09100f/lib/features/best_location/best_location_page.dart",
+        "https://github.com/txrx13/meduza-app/blob/ca6b69699f419d480bc87a9bdd3484a9ac09100f/lib/features/best_location/download_measurement.dart"
+      ]
     }
   ],
   "channels": [
@@ -147,17 +195,17 @@
       "platform": "android",
       "install_channel": "sideload",
       "status": "published",
-      "published_build": 267,
-      "published_version": "1.2.48+267",
+      "published_build": 268,
+      "published_version": "1.2.49+268",
       "submitted_build": null,
-      "verified_at": "2026-10-01T15:24:09Z",
-      "source_sha": "b805734e10ca22c0613f5b07f8294bf27e3a8b41",
-      "proof_url": "https://github.com/txrx13/meduza-app/actions/runs/36878941268",
+      "verified_at": "2026-10-02T06:20:41.846986+00:00",
+      "source_sha": "ca6b69699f419d480bc87a9bdd3484a9ac09100f",
+      "proof_url": "https://github.com/txrx13/meduzavpn/blob/main/releases/1.2.49-268.json",
       "regions": null,
       "artifact": {
-        "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/android/MeduzaVPN-1.2.48+267.apk",
-        "sha256": "ea58789fd4be8368eeb2638228fafed9f41710d51eb453d8ac1432991047f166",
-        "bytes": 145182443
+        "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/android/MeduzaVPN-1.2.49+268.apk",
+        "sha256": "3e15fe35f8a44a7bf056c6d5259cc1532a47c6ac7c46e99d8f41b53ccc9b2ab4",
+        "bytes": 145233723
       }
     },
     {
@@ -181,34 +229,34 @@
       "platform": "windows",
       "install_channel": "none",
       "status": "published",
-      "published_build": 267,
-      "published_version": "1.2.48+267",
+      "published_build": 268,
+      "published_version": "1.2.49+268",
       "submitted_build": null,
-      "verified_at": "2026-10-01T15:07:04Z",
-      "source_sha": "1304927a4e99bf3755dbe3b467df7f61ab365aa1",
-      "proof_url": "https://github.com/txrx13/meduzavpn/blob/main/releases/1.2.48-267.json",
+      "verified_at": "2026-10-02T06:20:41.846986+00:00",
+      "source_sha": "ca6b69699f419d480bc87a9bdd3484a9ac09100f",
+      "proof_url": "https://github.com/txrx13/meduzavpn/blob/main/releases/1.2.49-268.json",
       "regions": null,
       "artifact": {
-        "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/windows/MeduzaVPN-Setup-1.2.48-267.exe",
-        "sha256": "07301e80187113a98af0e88717d7a950b90b2dbcccf1798ff7cd4fd5bcc0e675",
-        "bytes": 48174760
+        "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/windows/MeduzaVPN-Setup-1.2.49-268.exe",
+        "sha256": "fad8c50f3e3feb49a890f3cfe29052c585090a9847cf26ee8d01287f22e15437",
+        "bytes": 48193296
       }
     },
     {
       "platform": "linux",
       "install_channel": "none",
       "status": "published",
-      "published_build": 267,
-      "published_version": "1.2.48+267",
+      "published_build": 268,
+      "published_version": "1.2.49+268",
       "submitted_build": null,
-      "verified_at": "2026-10-01T15:07:04Z",
-      "source_sha": "1304927a4e99bf3755dbe3b467df7f61ab365aa1",
-      "proof_url": "https://github.com/txrx13/meduzavpn/blob/main/releases/1.2.48-267.json",
+      "verified_at": "2026-10-02T06:20:41.846986+00:00",
+      "source_sha": "ca6b69699f419d480bc87a9bdd3484a9ac09100f",
+      "proof_url": "https://github.com/txrx13/meduzavpn/blob/main/releases/1.2.49-268.json",
       "regions": null,
       "artifact": {
-        "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/linux/meduzavpn-desktop_1.2.48-267_amd64.deb",
-        "sha256": "c494f9d96e78f408b501e87370a02cd66a073fcebc2defcfc5563f6993c1c57c",
-        "bytes": 46311932
+        "url": "https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/linux/meduzavpn-desktop_1.2.49-268_amd64.deb",
+        "sha256": "6fc308ccab17a825a3467227b044a4e3282c963c13ea787feb44cff8381fad83",
+        "bytes": 46331342
       }
     },
     {
