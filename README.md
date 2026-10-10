@@ -23,6 +23,10 @@
 
 ---
 
+## In preparation: build 306
+
+[Release draft / проект выпуска](releases/306-draft.md) — prepared changes, preserved 305 features, and separate publication/store status. SHARED sales are not announced as open. Current downloads remain on 305 until the release publisher updates them.
+
 ## Current release: [MeduzaVPN 1.2.54 (305)](releases/1.2.54-305.md)
 
 **Build 305 for every direct download: Android (website APK), Windows (installer and CLI), macOS (DMG and CLI), Linux (packages, archives, apt/dnf) and routers/OpenWrt.** Google Play production review and App Store review (iPhone/iPad and Mac) have the same build, also in TestFlight. Store releases follow when the stores approve them.
