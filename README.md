@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="banner.svg" alt="MeduzaVPN — personal VPN on your own server" width="100%">
+  <img src="banner.svg" alt="MeduzaVPN — personal VPN on your own server, or a shared one for less" width="100%">
 </p>
 
 <p align="center">
   <a href="https://meduzavpn.com"><img alt="meduzavpn.com" src="https://img.shields.io/badge/meduzavpn.com-C37BD9?style=for-the-badge&labelColor=0A0E19"></a>
-  <a href="#downloads"><img alt="Release 1.2.56 (316)" src="https://img.shields.io/badge/release-1.2.56%20(316)-8199D6?style=for-the-badge&labelColor=0A0E19"></a>
+  <a href="#downloads"><img alt="Release 1.2.56 (318)" src="https://img.shields.io/badge/release-1.2.56%20(318)-8199D6?style=for-the-badge&labelColor=0A0E19"></a>
   <a href="#downloads"><img alt="Downloads" src="https://img.shields.io/badge/downloads-apps%20%26%20CLI-5A7AB7?style=for-the-badge&labelColor=0A0E19"></a>
   <img alt="No source" src="https://img.shields.io/badge/builds%20only-no%20source-8199D6?style=for-the-badge&labelColor=0A0E19">
 </p>
@@ -23,12 +23,14 @@
 
 ---
 
-## Current release: [MeduzaVPN 1.2.56 (316)](releases/1.2.56-316.md)
+## Current release: [MeduzaVPN 1.2.56 (318)](releases/1.2.56-318.md)
 
-**Build 316 for every direct download: Android (website APK), Windows (installer and CLI), macOS (DMG and CLI), Linux (packages, archives, apt/dnf) and routers/OpenWrt.** The same build 316 is in TestFlight for iPhone/iPad, Mac and Apple TV and in Google Play internal testing.
+**Build 318 for every direct download: Android (website APK), Windows (installer and CLI), macOS (DMG and CLI), Linux (packages, archives, apt/dnf) and routers/OpenWrt.** The same build 318 is submitted for App Store review on iPhone/iPad and Apple TV, in TestFlight for iPhone/iPad, Mac and Apple TV, and submitted to Google Play production and internal testing.
 
 ### What changed
 
+- **New SHARED: more places in one subscription.** One SHARED subscription can now hold more places; unused places are shown, and you can add a VPN to one at any time.
+- **Gift subscription.** Give MeduzaVPN for 1, 3 or 12 months with a greeting card — on [meduzavpn.com/gift](https://meduzavpn.com/gift) or in the app. The recipient redeems the code in the app or on the website, and you can get a copy of the gift letter yourself.
 - **Redesigned Settings (Bento layout).** A clean profile card with one-tap e-mail change, a combined banner for activating a code or sending a VPN, a 3×2 quick-access Bento grid (Subscriptions, Devices, Referral programme, Split tunneling, Connect external VPN, Support) and four grouped settings cards with distinct icons.
 - **Connect an external VPN.** Import an external server from Settings by scanning a QR code with your phone camera or pasting a connection link. External VPNs appear in your server list on the home screen with a dedicated settings sheet and one-tap removal.
 - **Unified plan switcher.** Browse and compare available plans in a single switcher inside the app.
@@ -36,14 +38,15 @@
 - **Smoother connection and trial flow.** Cleaner state transitions when connecting or disconnecting across Android, iOS, macOS and Windows; automatic 2-VPN split selection when needed; all pool countries available in single-VPN location options.
 - **Universal Links stay in the app.** Opening a deep link no longer bounces through Safari on iOS and macOS.
 - **Clearer Apple TV sign-in and onboarding.** The empty VPN screen on Apple TV shows an App Store QR code for the iPhone app in 12 languages and localizes Sign out.
-- **Full Linux, router and OpenWrt refresh.** Linux packages (.deb and .rpm), standalone archives, the macOS universal CLI, router tarballs and OpenWrt/LuCI packages are all updated to 1.2.56 (316) from the same revision.
+- **Full Linux, router and OpenWrt refresh.** Linux packages (.deb and .rpm), standalone archives, the macOS universal CLI, router tarballs and OpenWrt/LuCI packages are all updated to 1.2.56 (318) from the same revision. The Apple TV app is updated.
 
-[Windows download](https://meduzavpn.com/download/windows) · [Android APK](https://meduzavpn.com/download/android) · [macOS DMG](https://meduzavpn.com/download/macos) · [All downloads](#downloads) · [Release notes, source revision and checksums](releases/1.2.56-316.md)
+[Windows download](https://meduzavpn.com/download/windows) · [Android APK](https://meduzavpn.com/download/android) · [macOS DMG](https://meduzavpn.com/download/macos) · [All downloads](#downloads) · [Release notes, source revision and checksums](releases/1.2.56-318.md)
 
 Earlier releases:
 
 | Release | Highlights |
 |---|---|
+| **[316 — redesigned Settings, external VPN import by QR or link, unified plan switcher and faster Windows networking](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.56-316)** | All direct downloads from one revision. Bento Settings screen, import an external VPN by QR code or link, unified plan switcher, in-process Win32/IP Helper networking on Windows, Universal Links stay in the app, Apple TV App Store QR sign-in. |
 | **[313 — sign in from another device, e-mail change in the app, referral rewards from 30%](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.55-313)** | Approve sign-in on another of your devices or with a QR code; change your account e-mail in the app; referral rewards from 30% of the first payment; steadier ULTRA on macOS, iOS and Windows; program routing on Windows; in-app desktop updates; restore a store subscription. |
 | **[305 — local network on Windows, one-time plans in Subscriptions](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.54-305)** | All direct downloads from one revision. Windows: home/office network devices by name and address while ULTRA is connected; one-time plans in Settings > Subscriptions; free test without an account on Windows, Linux and the website macOS app; no hang on "Disconnecting…". |
 | **[304 — response times in every location list, apps through another VPN on Android](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.53-304)** | All direct downloads from one revision. Measured response time in every country and city list, "Find the best location" remembers measurements, Android apps through another VPN, Windows tray-notification crash fixed, SberPay first where available. |
@@ -75,7 +78,7 @@ Earlier releases:
 | **[173 — Edit presets and keep your location](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-173)** | Edit preset names, networks and domains without rebuilding routes. Saving routing settings reconnects an affected active VPN and preserves the selected location. Updated macOS TestFlight packaging and shared data access for VPN extensions. |
 | **[172 — Location Split tunneling](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.24-172)** | One entry VPN, country and region presets, custom networks and domains, VPN/Direct destinations and an OTHERS fallback. ULTRA tunnels between your servers. Improved Devices spacing and Linux GUI runtime dependencies. |
 
-**Release channels:** every direct download (Android APK, Windows installer and CLI, macOS DMG and CLI, Linux direct and apt/dnf, routers and OpenWrt) is **1.2.56 (316)**. TestFlight and public stores have independent availability. See [release 316](releases/1.2.56-316.md) for the scope, verification results and limits.
+**Release channels:** every direct download (Android APK, Windows installer and CLI, macOS DMG and CLI, Linux direct and apt/dnf, routers and OpenWrt) is **1.2.56 (318)**. TestFlight and public stores have independent availability. See [release 318](releases/1.2.56-318.md) for the scope, verification results and limits.
 
 ## Split tunneling, per location
 
@@ -188,7 +191,7 @@ Each archive holds `meduzavpnd` (the daemon with every engine), `meduzavpn` (the
 | Device | How |
 |---|---|
 | Android TV, Google TV, Fire TV | The Android app, from [Google Play](https://play.google.com/store/apps/details?id=app.meduzavpn) or the [APK](https://meduzavpn.com/download/android). Every screen works with the remote; sign in with the on-screen keyboard or confirm from your phone. |
-| Apple TV | Existing store/TestFlight release; unchanged by this release | TestFlight / App Store |
+| Apple TV | 1.2.56 (318) submitted to App Store review; also in TestFlight | TestFlight / App Store |
 | Any television, via the router | Install MeduzaVPN on the router above; the television needs nothing. |
 
 ## Protocols
@@ -205,7 +208,7 @@ ULTRA's graphical client integration is available on **iOS, Android, macOS and, 
 
 ### Install from our apt / dnf repository (recommended)
 
-**Repository snapshot checked 17 October 2026: 1.2.56-316.** The GUI is available for x86-64; the CLI and service are available for x86-64 and ARM64. Both apt/dnf repositories and [direct packages](#downloads) are current.
+**Repository snapshot checked 18 October 2026: 1.2.56-318.** The GUI is available for x86-64; the CLI and service are available for x86-64 and ARM64. Both apt/dnf repositories and [direct packages](#downloads) are current.
 
 The apt/dnf repositories resolve dependencies and integrate with system updates. Repository metadata is signed; RPM packages are also signed individually. Install the signing key before adding a repository.
 
@@ -280,32 +283,32 @@ source code**.
 
 Everything below is also on **[meduzavpn.com](https://meduzavpn.com)**.
 
-**Channel status checked 17 October 2026:** iPhone/iPad 1.2.55 (315) is live on the App Store; 1.2.56 (316) is in TestFlight. Mac 1.2.53 (304) is live on the Mac App Store; 1.2.55 (315) is in review and 1.2.56 (316) is in TestFlight. Apple TV 1.2.55 (315) is live on the App Store; 1.2.56 (316) is in TestFlight. Android 1.2.55 (315) is live on Google Play; 1.2.56 (316) is in internal testing.
+**Channel status checked 18 October 2026:** iPhone/iPad 1.2.55 (315) is live on the App Store; 1.2.56 (318) is in App Store review and TestFlight. Mac 1.2.53 (304) is live on the Mac App Store; 1.2.55 (315) is in review and 1.2.56 (318) is in TestFlight. Apple TV 1.2.55 (315) is live on the App Store; 1.2.56 (318) is in App Store review and TestFlight. Android 1.2.55 (315) is live on Google Play; 1.2.56 (318) is submitted for production and in internal testing.
 
 ### Applications and testing
 
 | Platform / channel | Current release | Download |
 |---|---|---|
-| iOS public store | 1.2.55 (315); 1.2.56 (316) in TestFlight | [App Store](https://apps.apple.com/us/app/meduzavpn/id6755959724) |
-| macOS public store | 1.2.53 (304); 1.2.55 (315) Mac App Store review pending; 1.2.56 (316) in TestFlight | [Mac App Store](https://apps.apple.com/app/meduzavpn/id6755959724) |
-| iOS beta | 1.2.56 (316), available in TestFlight | TestFlight; existing internal tester groups |
-| macOS beta | 1.2.56 (316), available in TestFlight | TestFlight; existing internal tester groups |
-| Android public store | Production 1.2.55 (315); 1.2.56 (316) in internal testing | [Google Play](https://play.google.com/store/apps/details?id=app.meduzavpn) |
-| Apple TV | Existing store/TestFlight release; unchanged by this release | TestFlight / App Store |
-| macOS direct installer | 1.2.56 (316) | [Signed, notarized DMG](https://meduzavpn.com/download/macos) |
-| Android direct installer | 1.2.56 (316); also Android TV and Fire TV | [Release-signed APK](https://meduzavpn.com/download/android) |
-| Windows graphical app | 1.2.56 (316) | [Windows installer](https://meduzavpn.com/download/windows) |
-| Linux graphical app | 1.2.56-316, x86-64 | [DEB](https://meduzavpn.com/download/linux-desktop-deb) · [RPM](https://meduzavpn.com/download/linux-desktop-rpm) |
+| iOS public store | 1.2.55 (315); 1.2.56 (318) App Store review pending; also in TestFlight | [App Store](https://apps.apple.com/us/app/meduzavpn/id6755959724) |
+| macOS public store | 1.2.53 (304); 1.2.55 (315) Mac App Store review pending; 1.2.56 (318) in TestFlight | [Mac App Store](https://apps.apple.com/app/meduzavpn/id6755959724) |
+| iOS beta | 1.2.56 (318), available in TestFlight | TestFlight; existing internal tester groups |
+| macOS beta | 1.2.56 (318), available in TestFlight | TestFlight; existing internal tester groups |
+| Android public store | Production 1.2.55 (315); 1.2.56 (318) submitted for production and in internal testing | [Google Play](https://play.google.com/store/apps/details?id=app.meduzavpn) |
+| Apple TV | 1.2.56 (318) submitted to App Store review; also in TestFlight | TestFlight / App Store |
+| macOS direct installer | 1.2.56 (318) | [Signed, notarized DMG](https://meduzavpn.com/download/macos) |
+| Android direct installer | 1.2.56 (318); also Android TV and Fire TV | [Release-signed APK](https://meduzavpn.com/download/android) |
+| Windows graphical app | 1.2.56 (318) | [Windows installer](https://meduzavpn.com/download/windows) |
+| Linux graphical app | 1.2.56-318, x86-64 | [DEB](https://meduzavpn.com/download/linux-desktop-deb) · [RPM](https://meduzavpn.com/download/linux-desktop-rpm) |
 
 ### Command line and Linux service
 
 | Platform | Current release | Download |
 |---|---|---|
-| Linux CLI + daemon | 1.2.56-316 | [DEB](https://meduzavpn.com/download/linux-deb) · [RPM](https://meduzavpn.com/download/linux-rpm) · [tar.gz](https://meduzavpn.com/download/linux-tar) |
-| macOS CLI | 1.2.56-316 | [Universal archive](https://meduzavpn.com/download/cli-macos) |
-| Windows CLI | 1.2.56-316 | [Windows archive](https://meduzavpn.com/download/cli-windows) |
+| Linux CLI + daemon | 1.2.56-318 | [DEB](https://meduzavpn.com/download/linux-deb) · [RPM](https://meduzavpn.com/download/linux-rpm) · [tar.gz](https://meduzavpn.com/download/linux-tar) |
+| macOS CLI | 1.2.56-318 | [Universal archive](https://meduzavpn.com/download/cli-macos) |
+| Windows CLI | 1.2.56-318 | [Windows archive](https://meduzavpn.com/download/cli-windows) |
 
-Versioned files and signed SHA-256 checksums are listed in the [release manifest](https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/1.2.56-316/release.json). Downloads are hosted in DigitalOcean Spaces. Website download links stay stable between releases.
+Versioned files and signed SHA-256 checksums are listed in the [release manifest](https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/1.2.56-318/release.json). Downloads are hosted in DigitalOcean Spaces. Website download links stay stable between releases.
 
 > [!IMPORTANT]
 > The Linux graphical `meduzavpn-desktop` package is standalone and includes its daemon. Install it on a desktop, or choose `meduzavpn` for a headless CLI/service installation.
@@ -337,12 +340,12 @@ interface on in the app's settings first.
 
 ## Verifying what you downloaded
 
-The [release manifest](https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/1.2.56-316/release.json) records each installer, CLI and router package with its source revision, size and SHA-256 digest. Verify the signed checksum file before checking a download:
+The [release manifest](https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/1.2.56-318/release.json) records each installer, CLI and router package with its source revision, size and SHA-256 digest. Verify the signed checksum file before checking a download:
 
 ```bash
 curl -fsSL https://meduzavpn-builds.fra1.digitaloceanspaces.com/repo/meduzavpn-archive-keyring.asc | gpg --import
-curl -fsSLO https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/1.2.56-316/SHA256SUMS
-curl -fsSLO https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/1.2.56-316/SHA256SUMS.asc
+curl -fsSLO https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/1.2.56-318/SHA256SUMS
+curl -fsSLO https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/1.2.56-318/SHA256SUMS.asc
 gpg --verify SHA256SUMS.asc SHA256SUMS
 sha256sum -c SHA256SUMS --ignore-missing
 ```
