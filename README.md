@@ -360,6 +360,25 @@ B53E 4BF4 D6EF A6F0 E2B7  EF7B 4843 39BB 9BE9 9052
 
 ---
 
+## Documentation, Protocols & Platform Guides
+
+### VPN Protocols Supported
+- **[MeduzaVPN ULTRA](https://www.meduzavpn.com/protocols/meduza-ultra)** — Flagship stealth & high-throughput VPN protocol for restrictive networks and active DPI
+- **[VLESS](https://www.meduzavpn.com/protocols/vless)** (`VLESS` & `VLESS-2` Reality) · **[Hysteria 2](https://www.meduzavpn.com/protocols/hysteria)** (`QUIC` / `UDP`) · **[WireGuard](https://www.meduzavpn.com/protocols/wireguard)**
+- **[OpenVPN](https://www.meduzavpn.com/protocols/openvpn)** (`UDP` / `TCP`) · **[IKEv2 / IPsec](https://www.meduzavpn.com/protocols/ikev2)** · **[Shadowsocks](https://www.meduzavpn.com/protocols/shadowsocks)** · **[Trojan](https://www.meduzavpn.com/protocols/trojan)** · **[Xray](https://www.meduzavpn.com/protocols/xray)** · **[V2Ray](https://www.meduzavpn.com/protocols/v2ray)** · **[SOCKS5](https://www.meduzavpn.com/protocols/socks)**
+
+### Platforms & Devices
+- **Desktop:** [Windows](https://www.meduzavpn.com/devices/windows) · [macOS](https://www.meduzavpn.com/devices/mac) · [Linux (GUI & CLI, apt/dnf)](https://www.meduzavpn.com/devices/linux)
+- **Mobile:** [iOS (iPhone & iPad)](https://www.meduzavpn.com/devices/ios) · [Android](https://www.meduzavpn.com/devices/android)
+- **Routers & Smart TV:** [OpenWrt / LuCI & MikroTik Routers](https://www.meduzavpn.com/devices/router) · [Android TV, Google TV & Fire TV](https://www.meduzavpn.com/devices/tv) · [Apple TV (tvOS)](https://www.meduzavpn.com/devices/apple-tv)
+
+### Plans & Core Features
+- **[PERSONAL VPN](https://www.meduzavpn.com/personal)** (Dedicated personal VPN server & static IP) · **[SHARED VPN](https://www.meduzavpn.com/shared)** · **[FREE VPN](https://www.meduzavpn.com/free)** · **[MeduzaVPN Business & OpenAPI](https://www.meduzavpn.com/business)**
+- **[All 34+ Server Countries](https://www.meduzavpn.com/servers)** · **[Reverse VPN (Russia IP)](https://www.meduzavpn.com/reverse-vpn)** · **[Split Tunneling](https://www.meduzavpn.com/split-tunneling)** · **[Guides & Knowledge Base](https://www.meduzavpn.com/guides)**
+- **Languages:** [English](https://www.meduzavpn.com/) · [Русский](https://www.meduzavpn.com/ru) · [中文](https://www.meduzavpn.com/cn) · [Deutsch](https://www.meduzavpn.com/de) · [Español](https://www.meduzavpn.com/es) · [Français](https://www.meduzavpn.com/fr) · [Italiano](https://www.meduzavpn.com/it) · [Português](https://www.meduzavpn.com/pt) · [العربية](https://www.meduzavpn.com/ar) · [Türkçe](https://www.meduzavpn.com/tr) · [Bahasa Indonesia](https://www.meduzavpn.com/id) · [فارسی](https://www.meduzavpn.com/fa)
+
+---
+
 <p align="center">
   <sub>
     MeduzaVPN is operated by IPFB LLC · <a href="https://meduzavpn.com">meduzavpn.com</a> ·
