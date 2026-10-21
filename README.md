@@ -25,7 +25,7 @@
 
 ## Current release: [MeduzaVPN 1.2.57 (322)](releases/1.2.57-322.md)
 
-**Build 322 for every direct download: Android (website APK), Windows (installer and CLI), macOS (DMG and CLI), Linux (packages, archives, apt/dnf) and routers/OpenWrt.** The same build 322 is in Google Play production, submitted for App Store review on iPhone/iPad and Apple TV, and in TestFlight for iPhone/iPad, Mac and Apple TV.
+**Build 322 for every direct download: Android (website APK), Windows (installer and CLI), macOS (DMG and CLI), Linux (packages, archives, apt/dnf) and routers/OpenWrt.** On 21 October 2026, version 1.2.57 (322) was withdrawn from review in Google Play and the iOS/tvOS App Stores after errors were identified. Replacement build 323 is being prepared; its submission and public availability will be reported separately. macOS is excluded from the 323 rollout.
 
 ### What changed
 
