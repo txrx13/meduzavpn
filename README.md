@@ -57,7 +57,7 @@ Earlier releases:
 
 | Release | Highlights |
 |---|---|
-| **[322 — home screen, payment corrections and Apple TV ULTRA core](releases/1.2.57-322.md)** | Historical direct downloads, including macOS. Google Play and iOS/tvOS review submissions were withdrawn on 21 October 2026; replacement 323 availability is pending. |
+| **[322 — home screen, payment corrections and Apple TV ULTRA core](releases/1.2.57-322.md)** | Historical direct downloads, including macOS. Google Play and iOS/tvOS review submissions were withdrawn on 21 October 2026; replacement 323 store approval is pending. |
 | **[318 — redesigned Settings, external VPN import by QR or link, unified plan switcher and faster Windows networking](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.56-318)** | All direct downloads from one revision. Bento Settings screen, import an external VPN by QR code or link, unified plan switcher, in-process Win32/IP Helper networking on Windows, Universal Links stay in the app, Apple TV App Store QR sign-in. |
 | **[316 — redesigned Settings, external VPN import by QR or link, unified plan switcher and faster Windows networking](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.56-316)** | All direct downloads from one revision. Bento Settings screen, import an external VPN by QR code or link, unified plan switcher, in-process Win32/IP Helper networking on Windows, Universal Links stay in the app, Apple TV App Store QR sign-in. |
 | **[313 — sign in from another device, e-mail change in the app, referral rewards from 30%](https://github.com/txrx13/meduzavpn/releases/tag/v1.2.55-313)** | Approve sign-in on another of your devices or with a QR code; change your account e-mail in the app; referral rewards from 30% of the first payment; steadier ULTRA on macOS, iOS and Windows; program routing on Windows; in-app desktop updates; restore a store subscription. |
@@ -221,7 +221,7 @@ ULTRA's graphical client integration is available on **iOS, Android, macOS and, 
 
 ### Install from our apt / dnf repository (recommended)
 
-**Direct Linux packages and archives: 1.2.58-323. Signed apt/dnf index publication is pending final verification; use direct packages for 323 until that is confirmed.** The GUI is available for x86-64; the CLI and service are available for x86-64 and ARM64. Use the signed apt/dnf repositories or [direct packages](#downloads).
+**Direct Linux packages, archives and signed apt/dnf repositories: 1.2.58-323. Repository signatures, package indexes, all six new package downloads and preservation of the previous packages were verified.** The GUI is available for x86-64; the CLI and service are available for x86-64 and ARM64. Use the signed apt/dnf repositories or [direct packages](#downloads).
 
 The apt/dnf repositories resolve dependencies and integrate with system updates. Repository metadata is signed; RPM packages are also signed individually. Install the signing key before adding a repository.
 
@@ -321,7 +321,7 @@ Everything below is also on **[meduzavpn.com](https://meduzavpn.com)**.
 | macOS CLI | 1.2.57-322 | [Universal archive](https://meduzavpn.com/download/cli-macos) |
 | Windows CLI | 1.2.58-323 | [Windows archive](https://meduzavpn.com/download/cli-windows) |
 
-Build 323 checksums and channel status are recorded in the [323 notes](releases/1.2.58-323.md) and [signed mixed-platform manifest](https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/1.2.58-323/release.json). Its per-file entries identify 19 non-macOS 323 downloads and two unchanged macOS322 downloads. Historical 322 versioned files and signed SHA-256 checksums remain listed in the [release manifest](https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/1.2.57-322/release.json). Downloads are hosted in DigitalOcean Spaces. Website download links stay stable between releases.
+Build 323 checksums and channel status are recorded in the [323 notes](releases/1.2.58-323.md) and [signed mixed-platform manifest](https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/1.2.58-323/release-verified.json). Its per-file entries identify 19 non-macOS 323 downloads and two unchanged macOS 322 downloads. Historical 322 versioned files and signed SHA-256 checksums remain listed in the [release manifest](https://meduzavpn-builds.fra1.digitaloceanspaces.com/builds/1.2.57-322/release.json). Downloads are hosted in DigitalOcean Spaces. Website download links stay stable between releases.
 
 > [!IMPORTANT]
 > The Linux graphical `meduzavpn-desktop` package is standalone and includes its daemon. Install it on a desktop, or choose `meduzavpn` for a headless CLI/service installation.
